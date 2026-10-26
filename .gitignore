@@ -1,0 +1,13 @@
+.env
+.venv/
+venv/
+__pycache__/
+*.pyc
+models/*.joblib
+outputs/
+outputs_mock/
+.env
+.env.*
+!.env.example
+.DS_Store
+.ipynb_checkpoints/

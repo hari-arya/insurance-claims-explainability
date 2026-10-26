@@ -1,0 +1,27 @@
+# Core data and machine learning (versions used for the reference run in Thesis Appendix D)
+pandas==3.0.2
+numpy==2.4.4
+scipy==1.17.1
+scikit-learn==1.8.0
+imbalanced-learn==0.14.2
+statsmodels==0.15.0
+joblib==1.5.3
+matplotlib==3.10.9
+ 
+# Explainability
+shap==0.51.0
+lime==0.2.0.1
+ 
+# Language models
+google-genai==2.24.0
+anthropic==1.7.0
+requests==2.33.1
+python-dotenv==1.2.2
+ 
+# Consistency metric (installs PyTorch, about 1-2 GB)
+bert-score>=0.3.12
+ 
+# Dashboard and tests
+streamlit==1.64.0
+plotly==7.1.0
+pytest==9.1.1
