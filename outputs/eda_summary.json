@@ -1,0 +1,30 @@
+{
+ "rows": 1000,
+ "columns": 39,
+ "fraud_counts": {
+  "N": 753,
+  "Y": 247
+ },
+ "unknown_values": {
+  "collision_type": 178,
+  "property_damage": 360,
+  "police_report_available": 343
+ },
+ "authorities_none": 91,
+ "duplicates": 0,
+ "fraud_rate_by_severity": {
+  "Major Damage": 0.605,
+  "Minor Damage": 0.107,
+  "Total Loss": 0.129,
+  "Trivial Damage": 0.067
+ },
+ "fraud_rate_by_hobby_top4": {
+  "chess": 0.826,
+  "cross-fit": 0.743,
+  "yachting": 0.302,
+  "board-games": 0.292
+ },
+ "skew_total_claim": -0.59,
+ "spearman_total_vs_vehicle": 0.96,
+ "spearman_age_vs_months": 0.91
+}

@@ -1,0 +1,13 @@
+attribute,test,p_value,effect
+incident_severity,chi2(3) = 264.2,5.447033547673786e-57,Cramer's V = 0.51
+insured_hobbies,chi2(19) = 162.3,8.989147139882094e-25,Cramer's V = 0.40
+collision_type,chi2(3) = 31.4,7.118897790511357e-07,Cramer's V = 0.18
+incident_type,chi2(3) = 29.1,2.101333677478662e-06,Cramer's V = 0.17
+authorities_contacted,chi2(4) = 26.3,2.727701445143596e-05,Cramer's V = 0.16
+police_report_available,chi2(2) = 0.8,0.6565199966565936,Cramer's V = 0.03
+insured_education_level,chi2(6) = 1.7,0.9460265140372582,Cramer's V = 0.04
+insured_sex,chi2(1) = 0.8,0.36665138406877407,Cramer's V = 0.03
+total_claim_amount,Mann-Whitney U,1.0749813837919563e-05,"median fraud 61,290 vs legit 56,520"
+age,Mann-Whitney U,0.9085857611342887,median fraud 38 vs legit 38
+months_as_customer,Mann-Whitney U,0.6325182354430969,median fraud 199 vs legit 200
+policy_annual_premium,Mann-Whitney U,0.6274701792895707,"median fraud 1,270 vs legit 1,253"

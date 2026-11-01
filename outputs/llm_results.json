@@ -1,0 +1,195 @@
+{
+ "table_4_6": {
+  "C3-P0-G1": {
+   "driver_recall": 0.89,
+   "sign_accuracy": 0.999,
+   "ucr": 0.091,
+   "words": 130.615,
+   "seconds": 8.573,
+   "bertscore_f1": 0.952,
+   "driver_jaccard": 0.959,
+   "meets_recall_target": false,
+   "meets_ucr_target": false
+  },
+  "C3-P0-G2": {
+   "driver_recall": 0.909,
+   "sign_accuracy": 1.0,
+   "ucr": 0.152,
+   "words": 146.875,
+   "seconds": 5.642,
+   "bertscore_f1": 0.949,
+   "driver_jaccard": 0.906,
+   "meets_recall_target": true,
+   "meets_ucr_target": false
+  },
+  "C3-P1-G1": {
+   "driver_recall": 0.899,
+   "sign_accuracy": 0.996,
+   "ucr": 0.116,
+   "words": 146.5,
+   "seconds": 8.655,
+   "bertscore_f1": 0.953,
+   "driver_jaccard": 0.948,
+   "meets_recall_target": false,
+   "meets_ucr_target": false
+  },
+  "C3-P1-G2": {
+   "driver_recall": 0.911,
+   "sign_accuracy": 0.998,
+   "ucr": 0.124,
+   "words": 155.276,
+   "seconds": 5.26,
+   "bertscore_f1": 0.964,
+   "driver_jaccard": 0.907,
+   "meets_recall_target": true,
+   "meets_ucr_target": false
+  },
+  "C3-P2-G1": {
+   "driver_recall": 0.94,
+   "sign_accuracy": 0.995,
+   "ucr": 0.088,
+   "words": 152.651,
+   "seconds": 8.141,
+   "bertscore_f1": 0.944,
+   "driver_jaccard": 0.956,
+   "meets_recall_target": true,
+   "meets_ucr_target": false
+  },
+  "C3-P2-G2": {
+   "driver_recall": 0.895,
+   "sign_accuracy": 0.993,
+   "ucr": 0.159,
+   "words": 162.047,
+   "seconds": 4.864,
+   "bertscore_f1": 0.938,
+   "driver_jaccard": 0.874,
+   "meets_recall_target": false,
+   "meets_ucr_target": false
+  },
+  "C3-P3-G1": {
+   "driver_recall": 0.975,
+   "sign_accuracy": 0.979,
+   "ucr": 0.06,
+   "words": 111.438,
+   "seconds": 6.973,
+   "bertscore_f1": 0.982,
+   "driver_jaccard": 0.978,
+   "meets_recall_target": true,
+   "meets_ucr_target": false
+  },
+  "C3-P3-G2": {
+   "driver_recall": 0.939,
+   "sign_accuracy": 0.984,
+   "ucr": 0.058,
+   "words": 95.229,
+   "seconds": 3.482,
+   "bertscore_f1": 0.97,
+   "driver_jaccard": 0.947,
+   "meets_recall_target": true,
+   "meets_ucr_target": false
+  }
+ },
+ "clarity": {
+  "means": {
+   "C0": 3.3,
+   "C1": 2.0,
+   "C2": 3.55,
+   "C3-P0-G1": 3.78,
+   "C3-P0-G2": 3.19,
+   "C3-P1-G1": 3.71,
+   "C3-P1-G2": 3.15,
+   "C3-P2-G1": 3.78,
+   "C3-P2-G2": 3.24,
+   "C3-P3-G1": 3.93,
+   "C3-P3-G2": 3.65
+  },
+  "friedman_chi2": 357.56,
+  "friedman_df": 10,
+  "friedman_p": 9.887029244302881e-71,
+  "best_llm_condition": "C3-P3-G1",
+  "holm_p_vs_best": {
+   "C0": 8.25732094164012e-10,
+   "C1": 1.1503451871010318e-13,
+   "C2": 2.5282997053365597e-06
+  }
+ },
+ "actionability": {
+  "means": {
+   "C0": 1.0,
+   "C1": 1.0,
+   "C2": 2.72,
+   "C3-P0-G1": 2.73,
+   "C3-P0-G2": 2.51,
+   "C3-P1-G1": 2.65,
+   "C3-P1-G2": 2.43,
+   "C3-P2-G1": 2.74,
+   "C3-P2-G2": 2.47,
+   "C3-P3-G1": 3.03,
+   "C3-P3-G2": 2.84
+  },
+  "friedman_chi2": 401.38,
+  "friedman_df": 10,
+  "friedman_p": 4.78632584749899e-80,
+  "best_llm_condition": "C3-P3-G1",
+  "holm_p_vs_best": {
+   "C0": 6.213608977065098e-14,
+   "C1": 6.213608977065098e-14,
+   "C2": 1.1966598263461854e-05
+  }
+ },
+ "by_generator": {
+  "G1": {
+   "driver_recall": 0.926,
+   "sign_accuracy": 0.992,
+   "ucr": 0.089,
+   "seconds": 8.085
+  },
+  "G2": {
+   "driver_recall": 0.914,
+   "sign_accuracy": 0.994,
+   "ucr": 0.123,
+   "seconds": 4.812
+  }
+ },
+ "by_prompt": {
+  "P0": {
+   "driver_recall": 0.899,
+   "sign_accuracy": 0.999,
+   "ucr": 0.122,
+   "words": 138.745
+  },
+  "P1": {
+   "driver_recall": 0.905,
+   "sign_accuracy": 0.997,
+   "ucr": 0.12,
+   "words": 150.888
+  },
+  "P2": {
+   "driver_recall": 0.917,
+   "sign_accuracy": 0.994,
+   "ucr": 0.123,
+   "words": 157.349
+  },
+  "P3": {
+   "driver_recall": 0.957,
+   "sign_accuracy": 0.981,
+   "ucr": 0.059,
+   "words": 103.333
+  }
+ },
+ "sign_accuracy_positive_vs_negative_drivers": {
+  "false": 0.99,
+  "true": 0.994
+ },
+ "fallback_rate_by_condition": {
+  "C3-P0-G1": 0.521,
+  "C3-P0-G2": 0.333,
+  "C3-P1-G1": 0.474,
+  "C3-P1-G2": 0.328,
+  "C3-P2-G1": 0.307,
+  "C3-P2-G2": 0.333,
+  "C3-P3-G1": 0.208,
+  "C3-P3-G2": 0.323
+ },
+ "fallback_rate_overall": 0.354
+}

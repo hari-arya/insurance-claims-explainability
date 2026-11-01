@@ -1,0 +1,21 @@
+{
+ "n_items": 343,
+ "clarity": {
+  "kappa_judge_vs_rater1": 0.006193425440686129,
+  "kappa_judge_vs_rater2": 0.02785885651782416,
+  "kappa_judge_vs_mean_human": -0.044739830338654585,
+  "kappa_rater1_vs_rater2": 0.49275362318840576,
+  "meets_threshold": false
+ },
+ "actionability": {
+  "kappa_judge_vs_rater1": 0.0199218022714579,
+  "kappa_judge_vs_rater2": 0.10073452256033577,
+  "kappa_judge_vs_mean_human": 0.01829908504574773,
+  "kappa_rater1_vs_rater2": 0.1983879977655415,
+  "meets_threshold": false
+ },
+ "ucr_hand_check": {
+  "n": 0,
+  "agreement_with_judge": null
+ }
+}

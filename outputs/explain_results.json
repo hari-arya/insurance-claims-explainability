@@ -1,0 +1,105 @@
+{
+ "shap_base_value": 0.5,
+ "shap_global": [
+  [
+   "incident_severity_Major Damage",
+   0.2551
+  ],
+  [
+   "insured_hobbies_chess",
+   0.0509
+  ],
+  [
+   "insured_hobbies_cross-fit",
+   0.0475
+  ],
+  [
+   "policy_tenure_days",
+   0.022
+  ],
+  [
+   "property_claim",
+   0.0144
+  ],
+  [
+   "vehicle_claim",
+   0.0122
+  ],
+  [
+   "months_as_customer",
+   0.0085
+  ],
+  [
+   "policy_annual_premium",
+   0.0077
+  ],
+  [
+   "total_claim_amount",
+   0.0068
+  ],
+  [
+   "injury_claim",
+   0.0057
+  ]
+ ],
+ "agreement": {
+  "n_true_positives": 40,
+  "overlap_top3": 0.592,
+  "chance_top3": 0.3,
+  "overlap_top5": 0.605,
+  "overlap_top5_sd": 0.13,
+  "chance_top5": 0.5,
+  "jaccard_top5": 0.446,
+  "spearman_abs": 0.389,
+  "lime_three_seed_stability": 0.56,
+  "shap_recompute_max_diff": 0.0
+ },
+ "example_claim": {
+  "test_row": 121,
+  "prob": 0.88,
+  "shap_top5": [
+   [
+    "insured_hobbies_cross-fit",
+    0.477
+   ],
+   [
+    "incident_severity_Major Damage",
+    -0.139
+   ],
+   [
+    "total_claim_amount",
+    0.023
+   ],
+   [
+    "insured_hobbies_chess",
+    -0.022
+   ],
+   [
+    "policy_tenure_days",
+    0.017
+   ]
+  ],
+  "lime_top5": [
+   [
+    "incident_severity_Major Damage",
+    0.199
+   ],
+   [
+    "insured_hobbies_cross-fit",
+    0.054
+   ],
+   [
+    "total_claim_amount",
+    0.019
+   ],
+   [
+    "injury_claim",
+    -0.009
+   ],
+   [
+    "insured_hobbies_chess",
+    0.008
+   ]
+  ]
+ }
+}

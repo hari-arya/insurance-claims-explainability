@@ -1,0 +1,12 @@
+{
+ "flagged": 64,
+ "true_positives": 40,
+ "false_positives": 24,
+ "C2_driver_recall": 1.0,
+ "C2_sign_accuracy": 1.0,
+ "C2_words_mean": 73.2,
+ "C2_words_range": [
+  70,
+  76
+ ]
+}

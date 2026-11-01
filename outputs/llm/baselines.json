@@ -1,0 +1,1026 @@
+[
+ {
+  "idx": 1,
+  "prob": 0.756,
+  "true_label": 1,
+  "C0": "Fraud risk score 0.76 (threshold 0.49); risk band ELEVATED. Claim referred for review.",
+  "C1": "Fraud risk score 0.76 (threshold 0.49); risk band ELEVATED. Claim referred for review.\nTop factors (SHAP, fraud probability scale):\nincident_severity_Major Damage: +0.298\ninsured_hobbies_chess: -0.023\ninsured_hobbies_cross-fit: -0.023\npolicy_annual_premium: -0.023\nmonths_as_customer: +0.012",
+  "C2": "This claim has a fraud risk score of 0.76, above the referral threshold of 0.49. The factors raising the score are: incident severity recorded as major damage (yes); time as a customer (230 months). The factors lowering the score are: policyholder hobby recorded as chess (no); policyholder hobby recorded as cross-fit (no); annual premium ($1,060.74). Recommended check: verify the evidence behind the strongest factor, incident severity recorded as major damage.",
+  "C2_fidelity": {
+   "driver_recall": 1.0,
+   "sign_accuracy": 1.0,
+   "signs_stated": 2,
+   "non_driver_features_mentioned": 0,
+   "words": 70
+  },
+  "input_block": "Fraud risk score: 0.76 (referral threshold 0.49).\n\nCLAIM DETAILS\nPolicy: state IL, combined single limit 500/1000, deductible $1,000, annual premium $1,060.74, umbrella limit $0, customer for 230 months, policy in force 3,560 days at the incident date.\nPolicyholder: age 37, male, education PhD, occupation tech-support, hobby reading.\nIncident: Single Vehicle Collision, collision type Rear Collision, severity Major Damage, 1 vehicle(s), 2 bodily injur(ies), 3 witness(es), authorities contacted: Ambulance, police report available: not recorded, property damage: YES, hour 15:00, SC.\nClaim: total $49,100 (injury $9,820, property $4,910, vehicle $34,370); vehicle Suburu 1996.\n\nTOP FIVE MODEL FACTORS (SHAP, largest first)\n1. incident severity recorded as major damage (this claim: yes) - raises the fraud score (SHAP +0.298)\n2. policyholder hobby recorded as chess (this claim: no) - lowers the fraud score (SHAP -0.023)\n3. policyholder hobby recorded as cross-fit (this claim: no) - lowers the fraud score (SHAP -0.023)\n4. annual premium (this claim: $1,060.74) - lowers the fraud score (SHAP -0.023)\n5. time as a customer (this claim: 230 months) - raises the fraud score (SHAP +0.012)"
+ },
+ {
+  "idx": 3,
+  "prob": 0.788,
+  "true_label": 1,
+  "C0": "Fraud risk score 0.79 (threshold 0.49); risk band ELEVATED. Claim referred for review.",
+  "C1": "Fraud risk score 0.79 (threshold 0.49); risk band ELEVATED. Claim referred for review.\nTop factors (SHAP, fraud probability scale):\nincident_severity_Major Damage: +0.302\ninsured_hobbies_cross-fit: -0.023\ninsured_hobbies_chess: -0.023\npolicy_annual_premium: -0.020\nproperty_claim: +0.018",
+  "C2": "This claim has a fraud risk score of 0.79, above the referral threshold of 0.49. The factors raising the score are: incident severity recorded as major damage (yes); property component of the claim ($8,880). The factors lowering the score are: policyholder hobby recorded as cross-fit (no); policyholder hobby recorded as chess (no); annual premium ($1,093.83). Recommended check: verify the evidence behind the strongest factor, incident severity recorded as major damage.",
+  "C2_fidelity": {
+   "driver_recall": 1.0,
+   "sign_accuracy": 1.0,
+   "signs_stated": 2,
+   "non_driver_features_mentioned": 0,
+   "words": 70
+  },
+  "input_block": "Fraud risk score: 0.79 (referral threshold 0.49).\n\nCLAIM DETAILS\nPolicy: state IN, combined single limit 100/300, deductible $500, annual premium $1,093.83, umbrella limit $4,000,000, customer for 266 months, policy in force 4,370 days at the incident date.\nPolicyholder: age 42, male, education Associate, occupation adm-clerical, hobby board-games.\nIncident: Multi-vehicle Collision, collision type Side Collision, severity Major Damage, 3 vehicle(s), 1 bodily injur(ies), 1 witness(es), authorities contacted: Ambulance, police report available: NO, property damage: not recorded, hour 18:00, WV.\nClaim: total $53,280 (injury $4,440, property $8,880, vehicle $39,960); vehicle Suburu 2015.\n\nTOP FIVE MODEL FACTORS (SHAP, largest first)\n1. incident severity recorded as major damage (this claim: yes) - raises the fraud score (SHAP +0.302)\n2. policyholder hobby recorded as cross-fit (this claim: no) - lowers the fraud score (SHAP -0.023)\n3. policyholder hobby recorded as chess (this claim: no) - lowers the fraud score (SHAP -0.023)\n4. annual premium (this claim: $1,093.83) - lowers the fraud score (SHAP -0.020)\n5. property component of the claim (this claim: $8,880) - raises the fraud score (SHAP +0.018)"
+ },
+ {
+  "idx": 6,
+  "prob": 0.811,
+  "true_label": 1,
+  "C0": "Fraud risk score 0.81 (threshold 0.49); risk band HIGH. Claim referred for review.",
+  "C1": "Fraud risk score 0.81 (threshold 0.49); risk band HIGH. Claim referred for review.\nTop factors (SHAP, fraud probability scale):\nincident_severity_Major Damage: +0.311\ninsured_hobbies_cross-fit: -0.023\ninsured_hobbies_chess: -0.022\npolicy_tenure_days: +0.018\nproperty_claim: +0.014",
+  "C2": "This claim has a fraud risk score of 0.81, above the referral threshold of 0.49. The factors raising the score are: incident severity recorded as major damage (yes); time between policy start and incident (4,641 days); property component of the claim ($7,020). The factors lowering the score are: policyholder hobby recorded as cross-fit (no); policyholder hobby recorded as chess (no). Recommended check: verify the evidence behind the strongest factor, incident severity recorded as major damage.",
+  "C2_fidelity": {
+   "driver_recall": 1.0,
+   "sign_accuracy": 1.0,
+   "signs_stated": 2,
+   "non_driver_features_mentioned": 0,
+   "words": 75
+  },
+  "input_block": "Fraud risk score: 0.81 (referral threshold 0.49).\n\nCLAIM DETAILS\nPolicy: state IN, combined single limit 500/1000, deductible $500, annual premium $1,780.67, umbrella limit $0, customer for 234 months, policy in force 4,641 days at the incident date.\nPolicyholder: age 44, male, education Associate, occupation other-service, hobby exercise.\nIncident: Single Vehicle Collision, collision type Side Collision, severity Major Damage, 1 vehicle(s), 1 bodily injur(ies), 0 witness(es), authorities contacted: Ambulance, police report available: NO, property damage: NO, hour 3:00, NC.\nClaim: total $70,200 (injury $7,020, property $7,020, vehicle $56,160); vehicle Ford 2012.\n\nTOP FIVE MODEL FACTORS (SHAP, largest first)\n1. incident severity recorded as major damage (this claim: yes) - raises the fraud score (SHAP +0.311)\n2. policyholder hobby recorded as cross-fit (this claim: no) - lowers the fraud score (SHAP -0.023)\n3. policyholder hobby recorded as chess (this claim: no) - lowers the fraud score (SHAP -0.022)\n4. time between policy start and incident (this claim: 4,641 days) - raises the fraud score (SHAP +0.018)\n5. property component of the claim (this claim: $7,020) - raises the fraud score (SHAP +0.014)"
+ },
+ {
+  "idx": 7,
+  "prob": 0.77,
+  "true_label": 1,
+  "C0": "Fraud risk score 0.77 (threshold 0.49); risk band ELEVATED. Claim referred for review.",
+  "C1": "Fraud risk score 0.77 (threshold 0.49); risk band ELEVATED. Claim referred for review.\nTop factors (SHAP, fraud probability scale):\nincident_severity_Major Damage: +0.300\ninsured_hobbies_cross-fit: -0.022\npolicy_tenure_days: +0.019\ninsured_hobbies_chess: -0.019\nvehicle_claim: +0.015",
+  "C2": "This claim has a fraud risk score of 0.77, above the referral threshold of 0.49. The factors raising the score are: incident severity recorded as major damage (yes); time between policy start and incident (4,590 days); vehicle component of the claim ($45,360). The factors lowering the score are: policyholder hobby recorded as cross-fit (no); policyholder hobby recorded as chess (no). Recommended check: verify the evidence behind the strongest factor, incident severity recorded as major damage.",
+  "C2_fidelity": {
+   "driver_recall": 1.0,
+   "sign_accuracy": 1.0,
+   "signs_stated": 2,
+   "non_driver_features_mentioned": 0,
+   "words": 75
+  },
+  "input_block": "Fraud risk score: 0.77 (referral threshold 0.49).\n\nCLAIM DETAILS\nPolicy: state OH, combined single limit 250/500, deductible $2,000, annual premium $1,587.96, umbrella limit $0, customer for 14 months, policy in force 4,590 days at the incident date.\nPolicyholder: age 28, female, education Associate, occupation craft-repair, hobby board-games.\nIncident: Single Vehicle Collision, collision type Rear Collision, severity Major Damage, 1 vehicle(s), 2 bodily injur(ies), 1 witness(es), authorities contacted: Fire, police report available: YES, property damage: not recorded, hour 18:00, WV.\nClaim: total $71,280 (injury $12,960, property $12,960, vehicle $45,360); vehicle Audi 2012.\n\nTOP FIVE MODEL FACTORS (SHAP, largest first)\n1. incident severity recorded as major damage (this claim: yes) - raises the fraud score (SHAP +0.300)\n2. policyholder hobby recorded as cross-fit (this claim: no) - lowers the fraud score (SHAP -0.022)\n3. time between policy start and incident (this claim: 4,590 days) - raises the fraud score (SHAP +0.019)\n4. policyholder hobby recorded as chess (this claim: no) - lowers the fraud score (SHAP -0.019)\n5. vehicle component of the claim (this claim: $45,360) - raises the fraud score (SHAP +0.015)"
+ },
+ {
+  "idx": 12,
+  "prob": 0.744,
+  "true_label": 1,
+  "C0": "Fraud risk score 0.74 (threshold 0.49); risk band ELEVATED. Claim referred for review.",
+  "C1": "Fraud risk score 0.74 (threshold 0.49); risk band ELEVATED. Claim referred for review.\nTop factors (SHAP, fraud probability scale):\nincident_severity_Major Damage: +0.294\ninsured_hobbies_chess: -0.023\ninsured_hobbies_cross-fit: -0.022\nproperty_claim: +0.017\nmonths_as_customer: -0.016",
+  "C2": "This claim has a fraud risk score of 0.74, above the referral threshold of 0.49. The factors raising the score are: incident severity recorded as major damage (yes); property component of the claim ($9,720). The factors lowering the score are: policyholder hobby recorded as chess (no); policyholder hobby recorded as cross-fit (no); time as a customer (11 months). Recommended check: verify the evidence behind the strongest factor, incident severity recorded as major damage.",
+  "C2_fidelity": {
+   "driver_recall": 1.0,
+   "sign_accuracy": 1.0,
+   "signs_stated": 2,
+   "non_driver_features_mentioned": 0,
+   "words": 73
+  },
+  "input_block": "Fraud risk score: 0.74 (referral threshold 0.49).\n\nCLAIM DETAILS\nPolicy: state OH, combined single limit 500/1000, deductible $2,000, annual premium $1,217.69, umbrella limit $0, customer for 11 months, policy in force 5,040 days at the incident date.\nPolicyholder: age 40, female, education MD, occupation prof-specialty, hobby reading.\nIncident: Multi-vehicle Collision, collision type Side Collision, severity Major Damage, 3 vehicle(s), 1 bodily injur(ies), 0 witness(es), authorities contacted: Other, police report available: not recorded, property damage: not recorded, hour 6:00, SC.\nClaim: total $53,460 (injury $9,720, property $9,720, vehicle $34,020); vehicle Dodge 2004.\n\nTOP FIVE MODEL FACTORS (SHAP, largest first)\n1. incident severity recorded as major damage (this claim: yes) - raises the fraud score (SHAP +0.294)\n2. policyholder hobby recorded as chess (this claim: no) - lowers the fraud score (SHAP -0.023)\n3. policyholder hobby recorded as cross-fit (this claim: no) - lowers the fraud score (SHAP -0.022)\n4. property component of the claim (this claim: $9,720) - raises the fraud score (SHAP +0.017)\n5. time as a customer (this claim: 11 months) - lowers the fraud score (SHAP -0.016)"
+ },
+ {
+  "idx": 13,
+  "prob": 0.502,
+  "true_label": 1,
+  "C0": "Fraud risk score 0.50 (threshold 0.49); risk band MODERATE. Claim referred for review.",
+  "C1": "Fraud risk score 0.50 (threshold 0.49); risk band MODERATE. Claim referred for review.\nTop factors (SHAP, fraud probability scale):\nincident_severity_Major Damage: +0.226\nmonths_as_customer: -0.201\ninsured_hobbies_cross-fit: -0.027\ninsured_hobbies_chess: -0.023\npolicy_tenure_days: +0.020",
+  "C2": "This claim has a fraud risk score of 0.50, above the referral threshold of 0.49. The factors raising the score are: incident severity recorded as major damage (yes); time between policy start and incident (7,498 days). The factors lowering the score are: time as a customer (463 months); policyholder hobby recorded as cross-fit (no); policyholder hobby recorded as chess (no). Recommended check: verify the evidence behind the strongest factor, incident severity recorded as major damage.",
+  "C2_fidelity": {
+   "driver_recall": 1.0,
+   "sign_accuracy": 1.0,
+   "signs_stated": 2,
+   "non_driver_features_mentioned": 0,
+   "words": 75
+  },
+  "input_block": "Fraud risk score: 0.50 (referral threshold 0.49).\n\nCLAIM DETAILS\nPolicy: state IL, combined single limit 250/500, deductible $1,000, annual premium $979.73, umbrella limit $0, customer for 463 months, policy in force 7,498 days at the incident date.\nPolicyholder: age 59, female, education JD, occupation exec-managerial, hobby yachting.\nIncident: Multi-vehicle Collision, collision type Front Collision, severity Major Damage, 2 vehicle(s), 1 bodily injur(ies), 2 witness(es), authorities contacted: Other, police report available: NO, property damage: not recorded, hour 14:00, SC.\nClaim: total $72,400 (injury $7,240, property $14,480, vehicle $50,680); vehicle Chevrolet 1999.\n\nTOP FIVE MODEL FACTORS (SHAP, largest first)\n1. incident severity recorded as major damage (this claim: yes) - raises the fraud score (SHAP +0.226)\n2. time as a customer (this claim: 463 months) - lowers the fraud score (SHAP -0.201)\n3. policyholder hobby recorded as cross-fit (this claim: no) - lowers the fraud score (SHAP -0.027)\n4. policyholder hobby recorded as chess (this claim: no) - lowers the fraud score (SHAP -0.023)\n5. time between policy start and incident (this claim: 7,498 days) - raises the fraud score (SHAP +0.020)"
+ },
+ {
+  "idx": 16,
+  "prob": 0.826,
+  "true_label": 0,
+  "C0": "Fraud risk score 0.83 (threshold 0.49); risk band HIGH. Claim referred for review.",
+  "C1": "Fraud risk score 0.83 (threshold 0.49); risk band HIGH. Claim referred for review.\nTop factors (SHAP, fraud probability scale):\nincident_severity_Major Damage: +0.312\ninsured_hobbies_chess: -0.022\ninsured_hobbies_cross-fit: -0.022\npolicy_tenure_days: +0.015\nvehicle_claim: +0.014",
+  "C2": "This claim has a fraud risk score of 0.83, above the referral threshold of 0.49. The factors raising the score are: incident severity recorded as major damage (yes); time between policy start and incident (6,091 days); vehicle component of the claim ($41,650). The factors lowering the score are: policyholder hobby recorded as chess (no); policyholder hobby recorded as cross-fit (no). Recommended check: verify the evidence behind the strongest factor, incident severity recorded as major damage.",
+  "C2_fidelity": {
+   "driver_recall": 1.0,
+   "sign_accuracy": 1.0,
+   "signs_stated": 2,
+   "non_driver_features_mentioned": 0,
+   "words": 75
+  },
+  "input_block": "Fraud risk score: 0.83 (referral threshold 0.49).\n\nCLAIM DETAILS\nPolicy: state OH, combined single limit 250/500, deductible $1,000, annual premium $1,625.65, umbrella limit $0, customer for 330 months, policy in force 6,091 days at the incident date.\nPolicyholder: age 48, male, education College, occupation farming-fishing, hobby skydiving.\nIncident: Single Vehicle Collision, collision type Side Collision, severity Major Damage, 1 vehicle(s), 1 bodily injur(ies), 3 witness(es), authorities contacted: Ambulance, police report available: not recorded, property damage: YES, hour 10:00, VA.\nClaim: total $59,500 (injury $11,900, property $5,950, vehicle $41,650); vehicle Dodge 2006.\n\nTOP FIVE MODEL FACTORS (SHAP, largest first)\n1. incident severity recorded as major damage (this claim: yes) - raises the fraud score (SHAP +0.312)\n2. policyholder hobby recorded as chess (this claim: no) - lowers the fraud score (SHAP -0.022)\n3. policyholder hobby recorded as cross-fit (this claim: no) - lowers the fraud score (SHAP -0.022)\n4. time between policy start and incident (this claim: 6,091 days) - raises the fraud score (SHAP +0.015)\n5. vehicle component of the claim (this claim: $41,650) - raises the fraud score (SHAP +0.014)"
+ },
+ {
+  "idx": 19,
+  "prob": 0.78,
+  "true_label": 0,
+  "C0": "Fraud risk score 0.78 (threshold 0.49); risk band ELEVATED. Claim referred for review.",
+  "C1": "Fraud risk score 0.78 (threshold 0.49); risk band ELEVATED. Claim referred for review.\nTop factors (SHAP, fraud probability scale):\nincident_severity_Major Damage: +0.298\ninsured_hobbies_cross-fit: -0.024\ninsured_hobbies_chess: -0.020\npolicy_tenure_days: +0.018\npolicy_annual_premium: -0.016",
+  "C2": "This claim has a fraud risk score of 0.78, above the referral threshold of 0.49. The factors raising the score are: incident severity recorded as major damage (yes); time between policy start and incident (5,448 days). The factors lowering the score are: policyholder hobby recorded as cross-fit (no); policyholder hobby recorded as chess (no); annual premium ($954.16). Recommended check: verify the evidence behind the strongest factor, incident severity recorded as major damage.",
+  "C2_fidelity": {
+   "driver_recall": 1.0,
+   "sign_accuracy": 1.0,
+   "signs_stated": 2,
+   "non_driver_features_mentioned": 0,
+   "words": 72
+  },
+  "input_block": "Fraud risk score: 0.78 (referral threshold 0.49).\n\nCLAIM DETAILS\nPolicy: state IL, combined single limit 250/500, deductible $1,000, annual premium $954.16, umbrella limit $0, customer for 64 months, policy in force 5,448 days at the incident date.\nPolicyholder: age 25, male, education Masters, occupation prof-specialty, hobby video-games.\nIncident: Multi-vehicle Collision, collision type Side Collision, severity Major Damage, 4 vehicle(s), 0 bodily injur(ies), 0 witness(es), authorities contacted: Ambulance, police report available: not recorded, property damage: NO, hour 22:00, SC.\nClaim: total $75,600 (injury $12,600, property $12,600, vehicle $50,400); vehicle Toyota 2005.\n\nTOP FIVE MODEL FACTORS (SHAP, largest first)\n1. incident severity recorded as major damage (this claim: yes) - raises the fraud score (SHAP +0.298)\n2. policyholder hobby recorded as cross-fit (this claim: no) - lowers the fraud score (SHAP -0.024)\n3. policyholder hobby recorded as chess (this claim: no) - lowers the fraud score (SHAP -0.020)\n4. time between policy start and incident (this claim: 5,448 days) - raises the fraud score (SHAP +0.018)\n5. annual premium (this claim: $954.16) - lowers the fraud score (SHAP -0.016)"
+ },
+ {
+  "idx": 20,
+  "prob": 0.816,
+  "true_label": 1,
+  "C0": "Fraud risk score 0.82 (threshold 0.49); risk band HIGH. Claim referred for review.",
+  "C1": "Fraud risk score 0.82 (threshold 0.49); risk band HIGH. Claim referred for review.\nTop factors (SHAP, fraud probability scale):\ninsured_hobbies_cross-fit: +0.467\nincident_severity_Major Damage: -0.142\ninsured_hobbies_chess: -0.021\npolicy_tenure_days: +0.017\ntotal_claim_amount: -0.010",
+  "C2": "This claim has a fraud risk score of 0.82, above the referral threshold of 0.49. The factors raising the score are: policyholder hobby recorded as cross-fit (yes); time between policy start and incident (2,883 days). The factors lowering the score are: incident severity recorded as major damage (no (Minor Damage)); policyholder hobby recorded as chess (no); total claim amount ($51,900). Recommended check: verify the evidence behind the strongest factor, policyholder hobby recorded as cross-fit.",
+  "C2_fidelity": {
+   "driver_recall": 1.0,
+   "sign_accuracy": 1.0,
+   "signs_stated": 2,
+   "non_driver_features_mentioned": 0,
+   "words": 74
+  },
+  "input_block": "Fraud risk score: 0.82 (referral threshold 0.49).\n\nCLAIM DETAILS\nPolicy: state IN, combined single limit 500/1000, deductible $2,000, annual premium $1,101.83, umbrella limit $0, customer for 230 months, policy in force 2,883 days at the incident date.\nPolicyholder: age 43, male, education High School, occupation exec-managerial, hobby cross-fit.\nIncident: Multi-vehicle Collision, collision type Front Collision, severity Minor Damage, 3 vehicle(s), 0 bodily injur(ies), 3 witness(es), authorities contacted: Police, police report available: YES, property damage: not recorded, hour 0:00, NY.\nClaim: total $51,900 (injury $5,190, property $10,380, vehicle $36,330); vehicle BMW 2011.\n\nTOP FIVE MODEL FACTORS (SHAP, largest first)\n1. policyholder hobby recorded as cross-fit (this claim: yes) - raises the fraud score (SHAP +0.467)\n2. incident severity recorded as major damage (this claim: no (Minor Damage)) - lowers the fraud score (SHAP -0.142)\n3. policyholder hobby recorded as chess (this claim: no) - lowers the fraud score (SHAP -0.021)\n4. time between policy start and incident (this claim: 2,883 days) - raises the fraud score (SHAP +0.017)\n5. total claim amount (this claim: $51,900) - lowers the fraud score (SHAP -0.010)"
+ },
+ {
+  "idx": 21,
+  "prob": 0.799,
+  "true_label": 1,
+  "C0": "Fraud risk score 0.80 (threshold 0.49); risk band ELEVATED. Claim referred for review.",
+  "C1": "Fraud risk score 0.80 (threshold 0.49); risk band ELEVATED. Claim referred for review.\nTop factors (SHAP, fraud probability scale):\nincident_severity_Major Damage: +0.310\ninsured_hobbies_chess: -0.021\nproperty_claim: +0.021\ninsured_hobbies_cross-fit: -0.019\nvehicle_claim: +0.018",
+  "C2": "This claim has a fraud risk score of 0.80, above the referral threshold of 0.49. The factors raising the score are: incident severity recorded as major damage (yes); property component of the claim ($10,880); vehicle component of the claim ($38,080). The factors lowering the score are: policyholder hobby recorded as chess (no); policyholder hobby recorded as cross-fit (no). Recommended check: verify the evidence behind the strongest factor, incident severity recorded as major damage.",
+  "C2_fidelity": {
+   "driver_recall": 1.0,
+   "sign_accuracy": 1.0,
+   "signs_stated": 2,
+   "non_driver_features_mentioned": 0,
+   "words": 73
+  },
+  "input_block": "Fraud risk score: 0.80 (referral threshold 0.49).\n\nCLAIM DETAILS\nPolicy: state OH, combined single limit 250/500, deductible $2,000, annual premium $1,896.91, umbrella limit $0, customer for 144 months, policy in force 835 days at the incident date.\nPolicyholder: age 37, female, education PhD, occupation handlers-cleaners, hobby sleeping.\nIncident: Multi-vehicle Collision, collision type Rear Collision, severity Major Damage, 3 vehicle(s), 1 bodily injur(ies), 3 witness(es), authorities contacted: Fire, police report available: NO, property damage: YES, hour 17:00, SC.\nClaim: total $54,400 (injury $5,440, property $10,880, vehicle $38,080); vehicle Chevrolet 2015.\n\nTOP FIVE MODEL FACTORS (SHAP, largest first)\n1. incident severity recorded as major damage (this claim: yes) - raises the fraud score (SHAP +0.310)\n2. policyholder hobby recorded as chess (this claim: no) - lowers the fraud score (SHAP -0.021)\n3. property component of the claim (this claim: $10,880) - raises the fraud score (SHAP +0.021)\n4. policyholder hobby recorded as cross-fit (this claim: no) - lowers the fraud score (SHAP -0.019)\n5. vehicle component of the claim (this claim: $38,080) - raises the fraud score (SHAP +0.018)"
+ },
+ {
+  "idx": 25,
+  "prob": 0.839,
+  "true_label": 1,
+  "C0": "Fraud risk score 0.84 (threshold 0.49); risk band HIGH. Claim referred for review.",
+  "C1": "Fraud risk score 0.84 (threshold 0.49); risk band HIGH. Claim referred for review.\nTop factors (SHAP, fraud probability scale):\ninsured_hobbies_chess: +0.486\nincident_severity_Major Damage: -0.151\ninsured_hobbies_cross-fit: -0.025\nproperty_claim: +0.010\npolicy_annual_premium: +0.008",
+  "C2": "This claim has a fraud risk score of 0.84, above the referral threshold of 0.49. The factors raising the score are: policyholder hobby recorded as chess (yes); property component of the claim ($6,910); annual premium ($1,340.24). The factors lowering the score are: incident severity recorded as major damage (no (Minor Damage)); policyholder hobby recorded as cross-fit (no). Recommended check: verify the evidence behind the strongest factor, policyholder hobby recorded as chess.",
+  "C2_fidelity": {
+   "driver_recall": 1.0,
+   "sign_accuracy": 1.0,
+   "signs_stated": 2,
+   "non_driver_features_mentioned": 0,
+   "words": 71
+  },
+  "input_block": "Fraud risk score: 0.84 (referral threshold 0.49).\n\nCLAIM DETAILS\nPolicy: state IL, combined single limit 250/500, deductible $1,000, annual premium $1,340.24, umbrella limit $0, customer for 188 months, policy in force 7,618 days at the incident date.\nPolicyholder: age 33, male, education High School, occupation protective-serv, hobby chess.\nIncident: Multi-vehicle Collision, collision type Rear Collision, severity Minor Damage, 3 vehicle(s), 1 bodily injur(ies), 0 witness(es), authorities contacted: Police, police report available: not recorded, property damage: YES, hour 8:00, NY.\nClaim: total $76,010 (injury $13,820, property $6,910, vehicle $55,280); vehicle Dodge 1995.\n\nTOP FIVE MODEL FACTORS (SHAP, largest first)\n1. policyholder hobby recorded as chess (this claim: yes) - raises the fraud score (SHAP +0.486)\n2. incident severity recorded as major damage (this claim: no (Minor Damage)) - lowers the fraud score (SHAP -0.151)\n3. policyholder hobby recorded as cross-fit (this claim: no) - lowers the fraud score (SHAP -0.025)\n4. property component of the claim (this claim: $6,910) - raises the fraud score (SHAP +0.010)\n5. annual premium (this claim: $1,340.24) - raises the fraud score (SHAP +0.008)"
+ },
+ {
+  "idx": 27,
+  "prob": 0.791,
+  "true_label": 0,
+  "C0": "Fraud risk score 0.79 (threshold 0.49); risk band ELEVATED. Claim referred for review.",
+  "C1": "Fraud risk score 0.79 (threshold 0.49); risk band ELEVATED. Claim referred for review.\nTop factors (SHAP, fraud probability scale):\ninsured_hobbies_chess: +0.448\nincident_severity_Major Damage: -0.142\ninsured_hobbies_cross-fit: -0.025\nproperty_claim: -0.018\ninjury_claim: +0.013",
+  "C2": "This claim has a fraud risk score of 0.79, above the referral threshold of 0.49. The factors raising the score are: policyholder hobby recorded as chess (yes); injury component of the claim ($7,590). The factors lowering the score are: incident severity recorded as major damage (no (Minor Damage)); policyholder hobby recorded as cross-fit (no); property component of the claim ($15,180). Recommended check: verify the evidence behind the strongest factor, policyholder hobby recorded as chess.",
+  "C2_fidelity": {
+   "driver_recall": 1.0,
+   "sign_accuracy": 1.0,
+   "signs_stated": 2,
+   "non_driver_features_mentioned": 0,
+   "words": 74
+  },
+  "input_block": "Fraud risk score: 0.79 (referral threshold 0.49).\n\nCLAIM DETAILS\nPolicy: state OH, combined single limit 100/300, deductible $2,000, annual premium $1,578.54, umbrella limit $0, customer for 266 months, policy in force 2,169 days at the incident date.\nPolicyholder: age 46, male, education Associate, occupation handlers-cleaners, hobby chess.\nIncident: Single Vehicle Collision, collision type Front Collision, severity Minor Damage, 1 vehicle(s), 1 bodily injur(ies), 3 witness(es), authorities contacted: Fire, police report available: YES, property damage: NO, hour 18:00, WV.\nClaim: total $83,490 (injury $7,590, property $15,180, vehicle $60,720); vehicle Nissan 1996.\n\nTOP FIVE MODEL FACTORS (SHAP, largest first)\n1. policyholder hobby recorded as chess (this claim: yes) - raises the fraud score (SHAP +0.448)\n2. incident severity recorded as major damage (this claim: no (Minor Damage)) - lowers the fraud score (SHAP -0.142)\n3. policyholder hobby recorded as cross-fit (this claim: no) - lowers the fraud score (SHAP -0.025)\n4. property component of the claim (this claim: $15,180) - lowers the fraud score (SHAP -0.018)\n5. injury component of the claim (this claim: $7,590) - raises the fraud score (SHAP +0.013)"
+ },
+ {
+  "idx": 29,
+  "prob": 0.781,
+  "true_label": 0,
+  "C0": "Fraud risk score 0.78 (threshold 0.49); risk band ELEVATED. Claim referred for review.",
+  "C1": "Fraud risk score 0.78 (threshold 0.49); risk band ELEVATED. Claim referred for review.\nTop factors (SHAP, fraud probability scale):\nincident_severity_Major Damage: +0.301\ninsured_hobbies_cross-fit: -0.024\ninsured_hobbies_chess: -0.022\npolicy_annual_premium: -0.019\npolicy_tenure_days: +0.016",
+  "C2": "This claim has a fraud risk score of 0.78, above the referral threshold of 0.49. The factors raising the score are: incident severity recorded as major damage (yes); time between policy start and incident (4,585 days). The factors lowering the score are: policyholder hobby recorded as cross-fit (no); policyholder hobby recorded as chess (no); annual premium ($1,114.29). Recommended check: verify the evidence behind the strongest factor, incident severity recorded as major damage.",
+  "C2_fidelity": {
+   "driver_recall": 1.0,
+   "sign_accuracy": 1.0,
+   "signs_stated": 2,
+   "non_driver_features_mentioned": 0,
+   "words": 72
+  },
+  "input_block": "Fraud risk score: 0.78 (referral threshold 0.49).\n\nCLAIM DETAILS\nPolicy: state IN, combined single limit 100/300, deductible $1,000, annual premium $1,114.29, umbrella limit $0, customer for 219 months, policy in force 4,585 days at the incident date.\nPolicyholder: age 43, female, education High School, occupation transport-moving, hobby polo.\nIncident: Single Vehicle Collision, collision type Side Collision, severity Major Damage, 1 vehicle(s), 2 bodily injur(ies), 2 witness(es), authorities contacted: Ambulance, police report available: YES, property damage: not recorded, hour 1:00, VA.\nClaim: total $66,660 (injury $6,060, property $6,060, vehicle $54,540); vehicle Toyota 2006.\n\nTOP FIVE MODEL FACTORS (SHAP, largest first)\n1. incident severity recorded as major damage (this claim: yes) - raises the fraud score (SHAP +0.301)\n2. policyholder hobby recorded as cross-fit (this claim: no) - lowers the fraud score (SHAP -0.024)\n3. policyholder hobby recorded as chess (this claim: no) - lowers the fraud score (SHAP -0.022)\n4. annual premium (this claim: $1,114.29) - lowers the fraud score (SHAP -0.019)\n5. time between policy start and incident (this claim: 4,585 days) - raises the fraud score (SHAP +0.016)"
+ },
+ {
+  "idx": 31,
+  "prob": 0.776,
+  "true_label": 1,
+  "C0": "Fraud risk score 0.78 (threshold 0.49); risk band ELEVATED. Claim referred for review.",
+  "C1": "Fraud risk score 0.78 (threshold 0.49); risk band ELEVATED. Claim referred for review.\nTop factors (SHAP, fraud probability scale):\nincident_severity_Major Damage: +0.298\ninsured_hobbies_cross-fit: -0.024\ninsured_hobbies_chess: -0.023\npolicy_annual_premium: -0.013\nproperty_claim: +0.012",
+  "C2": "This claim has a fraud risk score of 0.78, above the referral threshold of 0.49. The factors raising the score are: incident severity recorded as major damage (yes); property component of the claim ($7,420). The factors lowering the score are: policyholder hobby recorded as cross-fit (no); policyholder hobby recorded as chess (no); annual premium ($1,194.00). Recommended check: verify the evidence behind the strongest factor, incident severity recorded as major damage.",
+  "C2_fidelity": {
+   "driver_recall": 1.0,
+   "sign_accuracy": 1.0,
+   "signs_stated": 2,
+   "non_driver_features_mentioned": 0,
+   "words": 70
+  },
+  "input_block": "Fraud risk score: 0.78 (referral threshold 0.49).\n\nCLAIM DETAILS\nPolicy: state IN, combined single limit 250/500, deductible $1,000, annual premium $1,194.00, umbrella limit $0, customer for 88 months, policy in force 2,668 days at the incident date.\nPolicyholder: age 25, female, education JD, occupation handlers-cleaners, hobby movies.\nIncident: Single Vehicle Collision, collision type Rear Collision, severity Major Damage, 1 vehicle(s), 1 bodily injur(ies), 2 witness(es), authorities contacted: Ambulance, police report available: YES, property damage: YES, hour 6:00, SC.\nClaim: total $66,780 (injury $7,420, property $7,420, vehicle $51,940); vehicle Ford 2013.\n\nTOP FIVE MODEL FACTORS (SHAP, largest first)\n1. incident severity recorded as major damage (this claim: yes) - raises the fraud score (SHAP +0.298)\n2. policyholder hobby recorded as cross-fit (this claim: no) - lowers the fraud score (SHAP -0.024)\n3. policyholder hobby recorded as chess (this claim: no) - lowers the fraud score (SHAP -0.023)\n4. annual premium (this claim: $1,194.00) - lowers the fraud score (SHAP -0.013)\n5. property component of the claim (this claim: $7,420) - raises the fraud score (SHAP +0.012)"
+ },
+ {
+  "idx": 36,
+  "prob": 0.772,
+  "true_label": 1,
+  "C0": "Fraud risk score 0.77 (threshold 0.49); risk band ELEVATED. Claim referred for review.",
+  "C1": "Fraud risk score 0.77 (threshold 0.49); risk band ELEVATED. Claim referred for review.\nTop factors (SHAP, fraud probability scale):\nincident_severity_Major Damage: +0.298\ninsured_hobbies_cross-fit: -0.023\ninsured_hobbies_chess: -0.023\npolicy_annual_premium: -0.018\npolicy_tenure_days: +0.018",
+  "C2": "This claim has a fraud risk score of 0.77, above the referral threshold of 0.49. The factors raising the score are: incident severity recorded as major damage (yes); time between policy start and incident (6,517 days). The factors lowering the score are: policyholder hobby recorded as cross-fit (no); policyholder hobby recorded as chess (no); annual premium ($1,129.23). Recommended check: verify the evidence behind the strongest factor, incident severity recorded as major damage.",
+  "C2_fidelity": {
+   "driver_recall": 1.0,
+   "sign_accuracy": 1.0,
+   "signs_stated": 2,
+   "non_driver_features_mentioned": 0,
+   "words": 72
+  },
+  "input_block": "Fraud risk score: 0.77 (referral threshold 0.49).\n\nCLAIM DETAILS\nPolicy: state IN, combined single limit 100/300, deductible $1,000, annual premium $1,129.23, umbrella limit $0, customer for 243 months, policy in force 6,517 days at the incident date.\nPolicyholder: age 41, female, education College, occupation farming-fishing, hobby camping.\nIncident: Single Vehicle Collision, collision type Front Collision, severity Major Damage, 1 vehicle(s), 1 bodily injur(ies), 0 witness(es), authorities contacted: Fire, police report available: YES, property damage: not recorded, hour 1:00, WV.\nClaim: total $50,300 (injury $10,060, property $5,030, vehicle $35,210); vehicle Suburu 1999.\n\nTOP FIVE MODEL FACTORS (SHAP, largest first)\n1. incident severity recorded as major damage (this claim: yes) - raises the fraud score (SHAP +0.298)\n2. policyholder hobby recorded as cross-fit (this claim: no) - lowers the fraud score (SHAP -0.023)\n3. policyholder hobby recorded as chess (this claim: no) - lowers the fraud score (SHAP -0.023)\n4. annual premium (this claim: $1,129.23) - lowers the fraud score (SHAP -0.018)\n5. time between policy start and incident (this claim: 6,517 days) - raises the fraud score (SHAP +0.018)"
+ },
+ {
+  "idx": 37,
+  "prob": 0.698,
+  "true_label": 1,
+  "C0": "Fraud risk score 0.70 (threshold 0.49); risk band ELEVATED. Claim referred for review.",
+  "C1": "Fraud risk score 0.70 (threshold 0.49); risk band ELEVATED. Claim referred for review.\nTop factors (SHAP, fraud probability scale):\ninsured_hobbies_chess: +0.433\nincident_severity_Major Damage: -0.138\nmonths_as_customer: -0.046\nproperty_claim: -0.035\ninsured_hobbies_cross-fit: -0.025",
+  "C2": "This claim has a fraud risk score of 0.70, above the referral threshold of 0.49. The factors raising the score are: policyholder hobby recorded as chess (yes). The factors lowering the score are: incident severity recorded as major damage (no (Total Loss)); time as a customer (16 months); property component of the claim ($13,200); policyholder hobby recorded as cross-fit (no). Recommended check: verify the evidence behind the strongest factor, policyholder hobby recorded as chess.",
+  "C2_fidelity": {
+   "driver_recall": 1.0,
+   "sign_accuracy": 1.0,
+   "signs_stated": 2,
+   "non_driver_features_mentioned": 0,
+   "words": 74
+  },
+  "input_block": "Fraud risk score: 0.70 (referral threshold 0.49).\n\nCLAIM DETAILS\nPolicy: state IL, combined single limit 100/300, deductible $1,000, annual premium $968.46, umbrella limit $0, customer for 16 months, policy in force 4,566 days at the incident date.\nPolicyholder: age 32, male, education MD, occupation tech-support, hobby chess.\nIncident: Multi-vehicle Collision, collision type Side Collision, severity Total Loss, 3 vehicle(s), 0 bodily injur(ies), 2 witness(es), authorities contacted: Ambulance, police report available: not recorded, property damage: not recorded, hour 0:00, WV.\nClaim: total $59,400 (injury $6,600, property $13,200, vehicle $39,600); vehicle Dodge 1995.\n\nTOP FIVE MODEL FACTORS (SHAP, largest first)\n1. policyholder hobby recorded as chess (this claim: yes) - raises the fraud score (SHAP +0.433)\n2. incident severity recorded as major damage (this claim: no (Total Loss)) - lowers the fraud score (SHAP -0.138)\n3. time as a customer (this claim: 16 months) - lowers the fraud score (SHAP -0.046)\n4. property component of the claim (this claim: $13,200) - lowers the fraud score (SHAP -0.035)\n5. policyholder hobby recorded as cross-fit (this claim: no) - lowers the fraud score (SHAP -0.025)"
+ },
+ {
+  "idx": 40,
+  "prob": 0.661,
+  "true_label": 1,
+  "C0": "Fraud risk score 0.66 (threshold 0.49); risk band ELEVATED. Claim referred for review.",
+  "C1": "Fraud risk score 0.66 (threshold 0.49); risk band ELEVATED. Claim referred for review.\nTop factors (SHAP, fraud probability scale):\nincident_severity_Major Damage: +0.294\npolicy_tenure_days: -0.089\ninsured_hobbies_chess: -0.025\ninsured_hobbies_cross-fit: -0.021\ninjury_claim: -0.012",
+  "C2": "This claim has a fraud risk score of 0.66, above the referral threshold of 0.49. The factors raising the score are: incident severity recorded as major damage (yes). The factors lowering the score are: time between policy start and incident (8,497 days); policyholder hobby recorded as chess (no); policyholder hobby recorded as cross-fit (no); injury component of the claim ($10,080). Recommended check: verify the evidence behind the strongest factor, incident severity recorded as major damage.",
+  "C2_fidelity": {
+   "driver_recall": 1.0,
+   "sign_accuracy": 1.0,
+   "signs_stated": 2,
+   "non_driver_features_mentioned": 0,
+   "words": 75
+  },
+  "input_block": "Fraud risk score: 0.66 (referral threshold 0.49).\n\nCLAIM DETAILS\nPolicy: state IL, combined single limit 250/500, deductible $1,000, annual premium $1,252.08, umbrella limit $0, customer for 97 months, policy in force 8,497 days at the incident date.\nPolicyholder: age 26, male, education College, occupation exec-managerial, hobby sleeping.\nIncident: Multi-vehicle Collision, collision type Rear Collision, severity Major Damage, 2 vehicle(s), 2 bodily injur(ies), 2 witness(es), authorities contacted: Other, police report available: NO, property damage: YES, hour 4:00, VA.\nClaim: total $50,400 (injury $10,080, property $5,040, vehicle $35,280); vehicle Honda 2000.\n\nTOP FIVE MODEL FACTORS (SHAP, largest first)\n1. incident severity recorded as major damage (this claim: yes) - raises the fraud score (SHAP +0.294)\n2. time between policy start and incident (this claim: 8,497 days) - lowers the fraud score (SHAP -0.089)\n3. policyholder hobby recorded as chess (this claim: no) - lowers the fraud score (SHAP -0.025)\n4. policyholder hobby recorded as cross-fit (this claim: no) - lowers the fraud score (SHAP -0.021)\n5. injury component of the claim (this claim: $10,080) - lowers the fraud score (SHAP -0.012)"
+ },
+ {
+  "idx": 42,
+  "prob": 0.802,
+  "true_label": 1,
+  "C0": "Fraud risk score 0.80 (threshold 0.49); risk band HIGH. Claim referred for review.",
+  "C1": "Fraud risk score 0.80 (threshold 0.49); risk band HIGH. Claim referred for review.\nTop factors (SHAP, fraud probability scale):\nincident_severity_Major Damage: +0.302\ninsured_hobbies_cross-fit: -0.023\ninsured_hobbies_chess: -0.023\npolicy_tenure_days: +0.018\nproperty_claim: +0.018",
+  "C2": "This claim has a fraud risk score of 0.80, above the referral threshold of 0.49. The factors raising the score are: incident severity recorded as major damage (yes); time between policy start and incident (6,713 days); property component of the claim ($5,900). The factors lowering the score are: policyholder hobby recorded as cross-fit (no); policyholder hobby recorded as chess (no). Recommended check: verify the evidence behind the strongest factor, incident severity recorded as major damage.",
+  "C2_fidelity": {
+   "driver_recall": 1.0,
+   "sign_accuracy": 1.0,
+   "signs_stated": 2,
+   "non_driver_features_mentioned": 0,
+   "words": 75
+  },
+  "input_block": "Fraud risk score: 0.80 (referral threshold 0.49).\n\nCLAIM DETAILS\nPolicy: state IL, combined single limit 100/300, deductible $2,000, annual premium $1,134.08, umbrella limit $0, customer for 156 months, policy in force 6,713 days at the incident date.\nPolicyholder: age 31, male, education PhD, occupation other-service, hobby reading.\nIncident: Single Vehicle Collision, collision type Front Collision, severity Major Damage, 1 vehicle(s), 2 bodily injur(ies), 0 witness(es), authorities contacted: Police, police report available: not recorded, property damage: not recorded, hour 3:00, NC.\nClaim: total $59,000 (injury $5,900, property $5,900, vehicle $47,200); vehicle Ford 2013.\n\nTOP FIVE MODEL FACTORS (SHAP, largest first)\n1. incident severity recorded as major damage (this claim: yes) - raises the fraud score (SHAP +0.302)\n2. policyholder hobby recorded as cross-fit (this claim: no) - lowers the fraud score (SHAP -0.023)\n3. policyholder hobby recorded as chess (this claim: no) - lowers the fraud score (SHAP -0.023)\n4. time between policy start and incident (this claim: 6,713 days) - raises the fraud score (SHAP +0.018)\n5. property component of the claim (this claim: $5,900) - raises the fraud score (SHAP +0.018)"
+ },
+ {
+  "idx": 55,
+  "prob": 0.811,
+  "true_label": 1,
+  "C0": "Fraud risk score 0.81 (threshold 0.49); risk band HIGH. Claim referred for review.",
+  "C1": "Fraud risk score 0.81 (threshold 0.49); risk band HIGH. Claim referred for review.\nTop factors (SHAP, fraud probability scale):\nincident_severity_Major Damage: +0.315\ninsured_hobbies_chess: -0.023\ninsured_hobbies_cross-fit: -0.022\nproperty_claim: +0.020\npolicy_tenure_days: +0.014",
+  "C2": "This claim has a fraud risk score of 0.81, above the referral threshold of 0.49. The factors raising the score are: incident severity recorded as major damage (yes); property component of the claim ($4,080); time between policy start and incident (7,210 days). The factors lowering the score are: policyholder hobby recorded as chess (no); policyholder hobby recorded as cross-fit (no). Recommended check: verify the evidence behind the strongest factor, incident severity recorded as major damage.",
+  "C2_fidelity": {
+   "driver_recall": 1.0,
+   "sign_accuracy": 1.0,
+   "signs_stated": 2,
+   "non_driver_features_mentioned": 0,
+   "words": 75
+  },
+  "input_block": "Fraud risk score: 0.81 (referral threshold 0.49).\n\nCLAIM DETAILS\nPolicy: state OH, combined single limit 100/300, deductible $500, annual premium $915.29, umbrella limit $0, customer for 175 months, policy in force 7,210 days at the incident date.\nPolicyholder: age 34, female, education JD, occupation handlers-cleaners, hobby base-jumping.\nIncident: Single Vehicle Collision, collision type Front Collision, severity Major Damage, 1 vehicle(s), 2 bodily injur(ies), 1 witness(es), authorities contacted: Other, police report available: YES, property damage: not recorded, hour 14:00, NY.\nClaim: total $36,720 (injury $4,080, property $4,080, vehicle $28,560); vehicle Honda 2009.\n\nTOP FIVE MODEL FACTORS (SHAP, largest first)\n1. incident severity recorded as major damage (this claim: yes) - raises the fraud score (SHAP +0.315)\n2. policyholder hobby recorded as chess (this claim: no) - lowers the fraud score (SHAP -0.023)\n3. policyholder hobby recorded as cross-fit (this claim: no) - lowers the fraud score (SHAP -0.022)\n4. property component of the claim (this claim: $4,080) - raises the fraud score (SHAP +0.020)\n5. time between policy start and incident (this claim: 7,210 days) - raises the fraud score (SHAP +0.014)"
+ },
+ {
+  "idx": 57,
+  "prob": 0.809,
+  "true_label": 1,
+  "C0": "Fraud risk score 0.81 (threshold 0.49); risk band HIGH. Claim referred for review.",
+  "C1": "Fraud risk score 0.81 (threshold 0.49); risk band HIGH. Claim referred for review.\nTop factors (SHAP, fraud probability scale):\nincident_severity_Major Damage: +0.313\ninsured_hobbies_chess: -0.023\ninsured_hobbies_cross-fit: -0.021\nproperty_claim: +0.018\npolicy_annual_premium: +0.010",
+  "C2": "This claim has a fraud risk score of 0.81, above the referral threshold of 0.49. The factors raising the score are: incident severity recorded as major damage (yes); property component of the claim ($9,360); annual premium ($1,452.27). The factors lowering the score are: policyholder hobby recorded as chess (no); policyholder hobby recorded as cross-fit (no). Recommended check: verify the evidence behind the strongest factor, incident severity recorded as major damage.",
+  "C2_fidelity": {
+   "driver_recall": 1.0,
+   "sign_accuracy": 1.0,
+   "signs_stated": 2,
+   "non_driver_features_mentioned": 0,
+   "words": 70
+  },
+  "input_block": "Fraud risk score: 0.81 (referral threshold 0.49).\n\nCLAIM DETAILS\nPolicy: state OH, combined single limit 250/500, deductible $500, annual premium $1,452.27, umbrella limit $0, customer for 282 months, policy in force 3,095 days at the incident date.\nPolicyholder: age 43, male, education MD, occupation farming-fishing, hobby video-games.\nIncident: Single Vehicle Collision, collision type Side Collision, severity Major Damage, 1 vehicle(s), 1 bodily injur(ies), 2 witness(es), authorities contacted: Ambulance, police report available: NO, property damage: NO, hour 19:00, SC.\nClaim: total $46,800 (injury $4,680, property $9,360, vehicle $32,760); vehicle Audi 2007.\n\nTOP FIVE MODEL FACTORS (SHAP, largest first)\n1. incident severity recorded as major damage (this claim: yes) - raises the fraud score (SHAP +0.313)\n2. policyholder hobby recorded as chess (this claim: no) - lowers the fraud score (SHAP -0.023)\n3. policyholder hobby recorded as cross-fit (this claim: no) - lowers the fraud score (SHAP -0.021)\n4. property component of the claim (this claim: $9,360) - raises the fraud score (SHAP +0.018)\n5. annual premium (this claim: $1,452.27) - raises the fraud score (SHAP +0.010)"
+ },
+ {
+  "idx": 58,
+  "prob": 0.878,
+  "true_label": 0,
+  "C0": "Fraud risk score 0.88 (threshold 0.49); risk band HIGH. Claim referred for review.",
+  "C1": "Fraud risk score 0.88 (threshold 0.49); risk band HIGH. Claim referred for review.\nTop factors (SHAP, fraud probability scale):\ninsured_hobbies_cross-fit: +0.233\nincident_severity_Major Damage: +0.157\ninjury_claim: -0.036\nproperty_claim: +0.018\ninsured_hobbies_chess: -0.016",
+  "C2": "This claim has a fraud risk score of 0.88, above the referral threshold of 0.49. The factors raising the score are: policyholder hobby recorded as cross-fit (yes); incident severity recorded as major damage (yes); property component of the claim ($8,790). The factors lowering the score are: injury component of the claim ($17,580); policyholder hobby recorded as chess (no). Recommended check: verify the evidence behind the strongest factor, policyholder hobby recorded as cross-fit.",
+  "C2_fidelity": {
+   "driver_recall": 1.0,
+   "sign_accuracy": 1.0,
+   "signs_stated": 2,
+   "non_driver_features_mentioned": 0,
+   "words": 72
+  },
+  "input_block": "Fraud risk score: 0.88 (referral threshold 0.49).\n\nCLAIM DETAILS\nPolicy: state IL, combined single limit 100/300, deductible $500, annual premium $1,427.46, umbrella limit $0, customer for 144 months, policy in force 7,823 days at the incident date.\nPolicyholder: age 35, male, education High School, occupation machine-op-inspct, hobby cross-fit.\nIncident: Multi-vehicle Collision, collision type Side Collision, severity Major Damage, 3 vehicle(s), 0 bodily injur(ies), 0 witness(es), authorities contacted: Police, police report available: not recorded, property damage: not recorded, hour 3:00, WV.\nClaim: total $87,900 (injury $17,580, property $8,790, vehicle $61,530); vehicle Dodge 1995.\n\nTOP FIVE MODEL FACTORS (SHAP, largest first)\n1. policyholder hobby recorded as cross-fit (this claim: yes) - raises the fraud score (SHAP +0.233)\n2. incident severity recorded as major damage (this claim: yes) - raises the fraud score (SHAP +0.157)\n3. injury component of the claim (this claim: $17,580) - lowers the fraud score (SHAP -0.036)\n4. property component of the claim (this claim: $8,790) - raises the fraud score (SHAP +0.018)\n5. policyholder hobby recorded as chess (this claim: no) - lowers the fraud score (SHAP -0.016)"
+ },
+ {
+  "idx": 60,
+  "prob": 0.748,
+  "true_label": 0,
+  "C0": "Fraud risk score 0.75 (threshold 0.49); risk band ELEVATED. Claim referred for review.",
+  "C1": "Fraud risk score 0.75 (threshold 0.49); risk band ELEVATED. Claim referred for review.\nTop factors (SHAP, fraud probability scale):\nincident_severity_Major Damage: +0.300\ninsured_hobbies_chess: -0.023\ninsured_hobbies_cross-fit: -0.023\npolicy_annual_premium: -0.022\ninjury_claim: -0.014",
+  "C2": "This claim has a fraud risk score of 0.75, above the referral threshold of 0.49. The factors raising the score are: incident severity recorded as major damage (yes). The factors lowering the score are: policyholder hobby recorded as chess (no); policyholder hobby recorded as cross-fit (no); annual premium ($1,059.52); injury component of the claim ($14,430). Recommended check: verify the evidence behind the strongest factor, incident severity recorded as major damage.",
+  "C2_fidelity": {
+   "driver_recall": 1.0,
+   "sign_accuracy": 1.0,
+   "signs_stated": 2,
+   "non_driver_features_mentioned": 0,
+   "words": 70
+  },
+  "input_block": "Fraud risk score: 0.75 (referral threshold 0.49).\n\nCLAIM DETAILS\nPolicy: state IN, combined single limit 100/300, deductible $1,000, annual premium $1,059.52, umbrella limit $0, customer for 168 months, policy in force 5,414 days at the incident date.\nPolicyholder: age 32, male, education MD, occupation protective-serv, hobby camping.\nIncident: Multi-vehicle Collision, collision type Side Collision, severity Major Damage, 2 vehicle(s), 1 bodily injur(ies), 1 witness(es), authorities contacted: Other, police report available: not recorded, property damage: not recorded, hour 13:00, VA.\nClaim: total $57,720 (injury $14,430, property $9,620, vehicle $33,670); vehicle Saab 2007.\n\nTOP FIVE MODEL FACTORS (SHAP, largest first)\n1. incident severity recorded as major damage (this claim: yes) - raises the fraud score (SHAP +0.300)\n2. policyholder hobby recorded as chess (this claim: no) - lowers the fraud score (SHAP -0.023)\n3. policyholder hobby recorded as cross-fit (this claim: no) - lowers the fraud score (SHAP -0.023)\n4. annual premium (this claim: $1,059.52) - lowers the fraud score (SHAP -0.022)\n5. injury component of the claim (this claim: $14,430) - lowers the fraud score (SHAP -0.014)"
+ },
+ {
+  "idx": 66,
+  "prob": 0.838,
+  "true_label": 1,
+  "C0": "Fraud risk score 0.84 (threshold 0.49); risk band HIGH. Claim referred for review.",
+  "C1": "Fraud risk score 0.84 (threshold 0.49); risk band HIGH. Claim referred for review.\nTop factors (SHAP, fraud probability scale):\nincident_severity_Major Damage: +0.313\ninsured_hobbies_chess: -0.023\ninsured_hobbies_cross-fit: -0.022\npolicy_annual_premium: +0.017\nvehicle_claim: +0.016",
+  "C2": "This claim has a fraud risk score of 0.84, above the referral threshold of 0.49. The factors raising the score are: incident severity recorded as major damage (yes); annual premium ($1,367.99); vehicle component of the claim ($38,640). The factors lowering the score are: policyholder hobby recorded as chess (no); policyholder hobby recorded as cross-fit (no). Recommended check: verify the evidence behind the strongest factor, incident severity recorded as major damage.",
+  "C2_fidelity": {
+   "driver_recall": 1.0,
+   "sign_accuracy": 1.0,
+   "signs_stated": 2,
+   "non_driver_features_mentioned": 0,
+   "words": 70
+  },
+  "input_block": "Fraud risk score: 0.84 (referral threshold 0.49).\n\nCLAIM DETAILS\nPolicy: state IL, combined single limit 100/300, deductible $500, annual premium $1,367.99, umbrella limit $0, customer for 156 months, policy in force 1,980 days at the incident date.\nPolicyholder: age 38, male, education High School, occupation armed-forces, hobby board-games.\nIncident: Multi-vehicle Collision, collision type Front Collision, severity Major Damage, 3 vehicle(s), 0 bodily injur(ies), 3 witness(es), authorities contacted: Fire, police report available: not recorded, property damage: not recorded, hour 23:00, WV.\nClaim: total $55,200 (injury $11,040, property $5,520, vehicle $38,640); vehicle Saab 1998.\n\nTOP FIVE MODEL FACTORS (SHAP, largest first)\n1. incident severity recorded as major damage (this claim: yes) - raises the fraud score (SHAP +0.313)\n2. policyholder hobby recorded as chess (this claim: no) - lowers the fraud score (SHAP -0.023)\n3. policyholder hobby recorded as cross-fit (this claim: no) - lowers the fraud score (SHAP -0.022)\n4. annual premium (this claim: $1,367.99) - raises the fraud score (SHAP +0.017)\n5. vehicle component of the claim (this claim: $38,640) - raises the fraud score (SHAP +0.016)"
+ },
+ {
+  "idx": 72,
+  "prob": 0.849,
+  "true_label": 0,
+  "C0": "Fraud risk score 0.85 (threshold 0.49); risk band HIGH. Claim referred for review.",
+  "C1": "Fraud risk score 0.85 (threshold 0.49); risk band HIGH. Claim referred for review.\nTop factors (SHAP, fraud probability scale):\ninsured_hobbies_cross-fit: +0.469\nincident_severity_Major Damage: -0.080\nmonths_as_customer: -0.070\ninsured_hobbies_chess: -0.023\npolicy_tenure_days: +0.022",
+  "C2": "This claim has a fraud risk score of 0.85, above the referral threshold of 0.49. The factors raising the score are: policyholder hobby recorded as cross-fit (yes); time between policy start and incident (6,395 days). The factors lowering the score are: incident severity recorded as major damage (no (Total Loss)); time as a customer (479 months); policyholder hobby recorded as chess (no). Recommended check: verify the evidence behind the strongest factor, policyholder hobby recorded as cross-fit.",
+  "C2_fidelity": {
+   "driver_recall": 1.0,
+   "sign_accuracy": 1.0,
+   "signs_stated": 2,
+   "non_driver_features_mentioned": 0,
+   "words": 76
+  },
+  "input_block": "Fraud risk score: 0.85 (referral threshold 0.49).\n\nCLAIM DETAILS\nPolicy: state IL, combined single limit 100/300, deductible $2,000, annual premium $1,304.83, umbrella limit $0, customer for 479 months, policy in force 6,395 days at the incident date.\nPolicyholder: age 60, female, education College, occupation other-service, hobby cross-fit.\nIncident: Single Vehicle Collision, collision type Rear Collision, severity Total Loss, 1 vehicle(s), 0 bodily injur(ies), 0 witness(es), authorities contacted: Ambulance, police report available: NO, property damage: NO, hour 18:00, NY.\nClaim: total $60,600 (injury $5,050, property $10,100, vehicle $45,450); vehicle Honda 2001.\n\nTOP FIVE MODEL FACTORS (SHAP, largest first)\n1. policyholder hobby recorded as cross-fit (this claim: yes) - raises the fraud score (SHAP +0.469)\n2. incident severity recorded as major damage (this claim: no (Total Loss)) - lowers the fraud score (SHAP -0.080)\n3. time as a customer (this claim: 479 months) - lowers the fraud score (SHAP -0.070)\n4. policyholder hobby recorded as chess (this claim: no) - lowers the fraud score (SHAP -0.023)\n5. time between policy start and incident (this claim: 6,395 days) - raises the fraud score (SHAP +0.022)"
+ },
+ {
+  "idx": 77,
+  "prob": 0.849,
+  "true_label": 1,
+  "C0": "Fraud risk score 0.85 (threshold 0.49); risk band HIGH. Claim referred for review.",
+  "C1": "Fraud risk score 0.85 (threshold 0.49); risk band HIGH. Claim referred for review.\nTop factors (SHAP, fraud probability scale):\nincident_severity_Major Damage: +0.315\ninsured_hobbies_cross-fit: -0.022\ninsured_hobbies_chess: -0.018\npolicy_annual_premium: +0.017\npolicy_tenure_days: +0.016",
+  "C2": "This claim has a fraud risk score of 0.85, above the referral threshold of 0.49. The factors raising the score are: incident severity recorded as major damage (yes); annual premium ($1,352.31); time between policy start and incident (5,017 days). The factors lowering the score are: policyholder hobby recorded as cross-fit (no); policyholder hobby recorded as chess (no). Recommended check: verify the evidence behind the strongest factor, incident severity recorded as major damage.",
+  "C2_fidelity": {
+   "driver_recall": 1.0,
+   "sign_accuracy": 1.0,
+   "signs_stated": 2,
+   "non_driver_features_mentioned": 0,
+   "words": 72
+  },
+  "input_block": "Fraud risk score: 0.85 (referral threshold 0.49).\n\nCLAIM DETAILS\nPolicy: state OH, combined single limit 100/300, deductible $2,000, annual premium $1,352.31, umbrella limit $0, customer for 274 months, policy in force 5,017 days at the incident date.\nPolicyholder: age 43, male, education College, occupation farming-fishing, hobby basketball.\nIncident: Single Vehicle Collision, collision type Front Collision, severity Major Damage, 1 vehicle(s), 0 bodily injur(ies), 3 witness(es), authorities contacted: Fire, police report available: YES, property damage: YES, hour 22:00, NY.\nClaim: total $63,840 (injury $10,640, property $10,640, vehicle $42,560); vehicle BMW 2006.\n\nTOP FIVE MODEL FACTORS (SHAP, largest first)\n1. incident severity recorded as major damage (this claim: yes) - raises the fraud score (SHAP +0.315)\n2. policyholder hobby recorded as cross-fit (this claim: no) - lowers the fraud score (SHAP -0.022)\n3. policyholder hobby recorded as chess (this claim: no) - lowers the fraud score (SHAP -0.018)\n4. annual premium (this claim: $1,352.31) - raises the fraud score (SHAP +0.017)\n5. time between policy start and incident (this claim: 5,017 days) - raises the fraud score (SHAP +0.016)"
+ },
+ {
+  "idx": 78,
+  "prob": 0.763,
+  "true_label": 0,
+  "C0": "Fraud risk score 0.76 (threshold 0.49); risk band ELEVATED. Claim referred for review.",
+  "C1": "Fraud risk score 0.76 (threshold 0.49); risk band ELEVATED. Claim referred for review.\nTop factors (SHAP, fraud probability scale):\nincident_severity_Major Damage: +0.304\ninsured_hobbies_cross-fit: -0.023\ninsured_hobbies_chess: -0.023\nproperty_claim: +0.014\ninjury_claim: -0.011",
+  "C2": "This claim has a fraud risk score of 0.76, above the referral threshold of 0.49. The factors raising the score are: incident severity recorded as major damage (yes); property component of the claim ($7,750). The factors lowering the score are: policyholder hobby recorded as cross-fit (no); policyholder hobby recorded as chess (no); injury component of the claim ($15,500). Recommended check: verify the evidence behind the strongest factor, incident severity recorded as major damage.",
+  "C2_fidelity": {
+   "driver_recall": 1.0,
+   "sign_accuracy": 1.0,
+   "signs_stated": 2,
+   "non_driver_features_mentioned": 0,
+   "words": 73
+  },
+  "input_block": "Fraud risk score: 0.76 (referral threshold 0.49).\n\nCLAIM DETAILS\nPolicy: state IN, combined single limit 100/300, deductible $1,000, annual premium $1,555.52, umbrella limit $0, customer for 422 months, policy in force 1,553 days at the incident date.\nPolicyholder: age 60, female, education MD, occupation machine-op-inspct, hobby hiking.\nIncident: Single Vehicle Collision, collision type Front Collision, severity Major Damage, 1 vehicle(s), 1 bodily injur(ies), 1 witness(es), authorities contacted: Ambulance, police report available: NO, property damage: YES, hour 11:00, NC.\nClaim: total $85,250 (injury $15,500, property $7,750, vehicle $62,000); vehicle Mercedes 1999.\n\nTOP FIVE MODEL FACTORS (SHAP, largest first)\n1. incident severity recorded as major damage (this claim: yes) - raises the fraud score (SHAP +0.304)\n2. policyholder hobby recorded as cross-fit (this claim: no) - lowers the fraud score (SHAP -0.023)\n3. policyholder hobby recorded as chess (this claim: no) - lowers the fraud score (SHAP -0.023)\n4. property component of the claim (this claim: $7,750) - raises the fraud score (SHAP +0.014)\n5. injury component of the claim (this claim: $15,500) - lowers the fraud score (SHAP -0.011)"
+ },
+ {
+  "idx": 82,
+  "prob": 0.782,
+  "true_label": 0,
+  "C0": "Fraud risk score 0.78 (threshold 0.49); risk band ELEVATED. Claim referred for review.",
+  "C1": "Fraud risk score 0.78 (threshold 0.49); risk band ELEVATED. Claim referred for review.\nTop factors (SHAP, fraud probability scale):\nincident_severity_Major Damage: +0.305\ninsured_hobbies_cross-fit: -0.024\ninsured_hobbies_chess: -0.022\npolicy_annual_premium: -0.018\npolicy_tenure_days: +0.016",
+  "C2": "This claim has a fraud risk score of 0.78, above the referral threshold of 0.49. The factors raising the score are: incident severity recorded as major damage (yes); time between policy start and incident (7,468 days). The factors lowering the score are: policyholder hobby recorded as cross-fit (no); policyholder hobby recorded as chess (no); annual premium ($973.80). Recommended check: verify the evidence behind the strongest factor, incident severity recorded as major damage.",
+  "C2_fidelity": {
+   "driver_recall": 1.0,
+   "sign_accuracy": 1.0,
+   "signs_stated": 2,
+   "non_driver_features_mentioned": 0,
+   "words": 72
+  },
+  "input_block": "Fraud risk score: 0.78 (referral threshold 0.49).\n\nCLAIM DETAILS\nPolicy: state OH, combined single limit 500/1000, deductible $500, annual premium $973.80, umbrella limit $0, customer for 72 months, policy in force 7,468 days at the incident date.\nPolicyholder: age 29, female, education Associate, occupation craft-repair, hobby exercise.\nIncident: Single Vehicle Collision, collision type Rear Collision, severity Major Damage, 1 vehicle(s), 1 bodily injur(ies), 0 witness(es), authorities contacted: Ambulance, police report available: NO, property damage: not recorded, hour 9:00, WV.\nClaim: total $66,200 (injury $6,620, property $6,620, vehicle $52,960); vehicle Dodge 2013.\n\nTOP FIVE MODEL FACTORS (SHAP, largest first)\n1. incident severity recorded as major damage (this claim: yes) - raises the fraud score (SHAP +0.305)\n2. policyholder hobby recorded as cross-fit (this claim: no) - lowers the fraud score (SHAP -0.024)\n3. policyholder hobby recorded as chess (this claim: no) - lowers the fraud score (SHAP -0.022)\n4. annual premium (this claim: $973.80) - lowers the fraud score (SHAP -0.018)\n5. time between policy start and incident (this claim: 7,468 days) - raises the fraud score (SHAP +0.016)"
+ },
+ {
+  "idx": 88,
+  "prob": 0.726,
+  "true_label": 0,
+  "C0": "Fraud risk score 0.73 (threshold 0.49); risk band ELEVATED. Claim referred for review.",
+  "C1": "Fraud risk score 0.73 (threshold 0.49); risk band ELEVATED. Claim referred for review.\nTop factors (SHAP, fraud probability scale):\nincident_severity_Major Damage: +0.289\nproperty_claim: -0.022\ninsured_hobbies_cross-fit: -0.022\ninsured_hobbies_chess: -0.018\nvehicle_claim: +0.012",
+  "C2": "This claim has a fraud risk score of 0.73, above the referral threshold of 0.49. The factors raising the score are: incident severity recorded as major damage (yes); vehicle component of the claim ($47,360). The factors lowering the score are: property component of the claim ($11,840); policyholder hobby recorded as cross-fit (no); policyholder hobby recorded as chess (no). Recommended check: verify the evidence behind the strongest factor, incident severity recorded as major damage.",
+  "C2_fidelity": {
+   "driver_recall": 1.0,
+   "sign_accuracy": 1.0,
+   "signs_stated": 2,
+   "non_driver_features_mentioned": 0,
+   "words": 73
+  },
+  "input_block": "Fraud risk score: 0.73 (referral threshold 0.49).\n\nCLAIM DETAILS\nPolicy: state OH, combined single limit 250/500, deductible $500, annual premium $911.53, umbrella limit $0, customer for 237 months, policy in force 2,130 days at the incident date.\nPolicyholder: age 43, female, education PhD, occupation sales, hobby basketball.\nIncident: Single Vehicle Collision, collision type Rear Collision, severity Major Damage, 1 vehicle(s), 0 bodily injur(ies), 1 witness(es), authorities contacted: Police, police report available: NO, property damage: NO, hour 23:00, WV.\nClaim: total $59,200 (injury $0, property $11,840, vehicle $47,360); vehicle Chevrolet 1998.\n\nTOP FIVE MODEL FACTORS (SHAP, largest first)\n1. incident severity recorded as major damage (this claim: yes) - raises the fraud score (SHAP +0.289)\n2. property component of the claim (this claim: $11,840) - lowers the fraud score (SHAP -0.022)\n3. policyholder hobby recorded as cross-fit (this claim: no) - lowers the fraud score (SHAP -0.022)\n4. policyholder hobby recorded as chess (this claim: no) - lowers the fraud score (SHAP -0.018)\n5. vehicle component of the claim (this claim: $47,360) - raises the fraud score (SHAP +0.012)"
+ },
+ {
+  "idx": 90,
+  "prob": 0.897,
+  "true_label": 0,
+  "C0": "Fraud risk score 0.90 (threshold 0.49); risk band HIGH. Claim referred for review.",
+  "C1": "Fraud risk score 0.90 (threshold 0.49); risk band HIGH. Claim referred for review.\nTop factors (SHAP, fraud probability scale):\ninsured_hobbies_cross-fit: +0.234\nincident_severity_Major Damage: +0.162\ninsured_hobbies_chess: -0.015\npolicy_tenure_days: +0.013\nproperty_claim: +0.010",
+  "C2": "This claim has a fraud risk score of 0.90, above the referral threshold of 0.49. The factors raising the score are: policyholder hobby recorded as cross-fit (yes); incident severity recorded as major damage (yes); time between policy start and incident (3,710 days); property component of the claim ($4,940). The factors lowering the score are: policyholder hobby recorded as chess (no). Recommended check: verify the evidence behind the strongest factor, policyholder hobby recorded as cross-fit.",
+  "C2_fidelity": {
+   "driver_recall": 1.0,
+   "sign_accuracy": 1.0,
+   "signs_stated": 2,
+   "non_driver_features_mentioned": 0,
+   "words": 74
+  },
+  "input_block": "Fraud risk score: 0.90 (referral threshold 0.49).\n\nCLAIM DETAILS\nPolicy: state IL, combined single limit 100/300, deductible $1,000, annual premium $1,156.19, umbrella limit $0, customer for 322 months, policy in force 3,710 days at the incident date.\nPolicyholder: age 44, female, education College, occupation machine-op-inspct, hobby cross-fit.\nIncident: Multi-vehicle Collision, collision type Side Collision, severity Major Damage, 3 vehicle(s), 0 bodily injur(ies), 3 witness(es), authorities contacted: Fire, police report available: not recorded, property damage: YES, hour 20:00, NY.\nClaim: total $49,400 (injury $9,880, property $4,940, vehicle $34,580); vehicle Jeep 2010.\n\nTOP FIVE MODEL FACTORS (SHAP, largest first)\n1. policyholder hobby recorded as cross-fit (this claim: yes) - raises the fraud score (SHAP +0.234)\n2. incident severity recorded as major damage (this claim: yes) - raises the fraud score (SHAP +0.162)\n3. policyholder hobby recorded as chess (this claim: no) - lowers the fraud score (SHAP -0.015)\n4. time between policy start and incident (this claim: 3,710 days) - raises the fraud score (SHAP +0.013)\n5. property component of the claim (this claim: $4,940) - raises the fraud score (SHAP +0.010)"
+ },
+ {
+  "idx": 91,
+  "prob": 0.767,
+  "true_label": 1,
+  "C0": "Fraud risk score 0.77 (threshold 0.49); risk band ELEVATED. Claim referred for review.",
+  "C1": "Fraud risk score 0.77 (threshold 0.49); risk band ELEVATED. Claim referred for review.\nTop factors (SHAP, fraud probability scale):\nincident_severity_Major Damage: +0.302\ninsured_hobbies_chess: -0.023\ninsured_hobbies_cross-fit: -0.023\nvehicle_claim: +0.012\nproperty_claim: -0.012",
+  "C2": "This claim has a fraud risk score of 0.77, above the referral threshold of 0.49. The factors raising the score are: incident severity recorded as major damage (yes); vehicle component of the claim ($58,500). The factors lowering the score are: policyholder hobby recorded as chess (no); policyholder hobby recorded as cross-fit (no); property component of the claim ($13,000). Recommended check: verify the evidence behind the strongest factor, incident severity recorded as major damage.",
+  "C2_fidelity": {
+   "driver_recall": 1.0,
+   "sign_accuracy": 1.0,
+   "signs_stated": 2,
+   "non_driver_features_mentioned": 0,
+   "words": 73
+  },
+  "input_block": "Fraud risk score: 0.77 (referral threshold 0.49).\n\nCLAIM DETAILS\nPolicy: state IN, combined single limit 250/500, deductible $1,000, annual premium $1,569.33, umbrella limit $0, customer for 371 months, policy in force 7,658 days at the incident date.\nPolicyholder: age 50, male, education PhD, occupation machine-op-inspct, hobby board-games.\nIncident: Multi-vehicle Collision, collision type Side Collision, severity Major Damage, 3 vehicle(s), 2 bodily injur(ies), 1 witness(es), authorities contacted: Other, police report available: YES, property damage: NO, hour 2:00, WV.\nClaim: total $84,500 (injury $13,000, property $13,000, vehicle $58,500); vehicle Volkswagen 2011.\n\nTOP FIVE MODEL FACTORS (SHAP, largest first)\n1. incident severity recorded as major damage (this claim: yes) - raises the fraud score (SHAP +0.302)\n2. policyholder hobby recorded as chess (this claim: no) - lowers the fraud score (SHAP -0.023)\n3. policyholder hobby recorded as cross-fit (this claim: no) - lowers the fraud score (SHAP -0.023)\n4. vehicle component of the claim (this claim: $58,500) - raises the fraud score (SHAP +0.012)\n5. property component of the claim (this claim: $13,000) - lowers the fraud score (SHAP -0.012)"
+ },
+ {
+  "idx": 94,
+  "prob": 0.824,
+  "true_label": 1,
+  "C0": "Fraud risk score 0.82 (threshold 0.49); risk band HIGH. Claim referred for review.",
+  "C1": "Fraud risk score 0.82 (threshold 0.49); risk band HIGH. Claim referred for review.\nTop factors (SHAP, fraud probability scale):\nincident_severity_Major Damage: +0.311\ninsured_hobbies_chess: -0.023\ninsured_hobbies_cross-fit: -0.022\nvehicle_claim: +0.015\nproperty_claim: +0.014",
+  "C2": "This claim has a fraud risk score of 0.82, above the referral threshold of 0.49. The factors raising the score are: incident severity recorded as major damage (yes); vehicle component of the claim ($44,870); property component of the claim ($6,410). The factors lowering the score are: policyholder hobby recorded as chess (no); policyholder hobby recorded as cross-fit (no). Recommended check: verify the evidence behind the strongest factor, incident severity recorded as major damage.",
+  "C2_fidelity": {
+   "driver_recall": 1.0,
+   "sign_accuracy": 1.0,
+   "signs_stated": 2,
+   "non_driver_features_mentioned": 0,
+   "words": 73
+  },
+  "input_block": "Fraud risk score: 0.82 (referral threshold 0.49).\n\nCLAIM DETAILS\nPolicy: state OH, combined single limit 250/500, deductible $2,000, annual premium $1,486.04, umbrella limit $0, customer for 338 months, policy in force 2,546 days at the incident date.\nPolicyholder: age 47, female, education Associate, occupation armed-forces, hobby board-games.\nIncident: Multi-vehicle Collision, collision type Rear Collision, severity Major Damage, 3 vehicle(s), 2 bodily injur(ies), 3 witness(es), authorities contacted: Other, police report available: not recorded, property damage: NO, hour 1:00, OH.\nClaim: total $64,100 (injury $12,820, property $6,410, vehicle $44,870); vehicle Dodge 2014.\n\nTOP FIVE MODEL FACTORS (SHAP, largest first)\n1. incident severity recorded as major damage (this claim: yes) - raises the fraud score (SHAP +0.311)\n2. policyholder hobby recorded as chess (this claim: no) - lowers the fraud score (SHAP -0.023)\n3. policyholder hobby recorded as cross-fit (this claim: no) - lowers the fraud score (SHAP -0.022)\n4. vehicle component of the claim (this claim: $44,870) - raises the fraud score (SHAP +0.015)\n5. property component of the claim (this claim: $6,410) - raises the fraud score (SHAP +0.014)"
+ },
+ {
+  "idx": 95,
+  "prob": 0.792,
+  "true_label": 1,
+  "C0": "Fraud risk score 0.79 (threshold 0.49); risk band ELEVATED. Claim referred for review.",
+  "C1": "Fraud risk score 0.79 (threshold 0.49); risk band ELEVATED. Claim referred for review.\nTop factors (SHAP, fraud probability scale):\nincident_severity_Major Damage: +0.305\ninsured_hobbies_chess: -0.022\ninsured_hobbies_cross-fit: -0.020\nproperty_claim: +0.013\npolicy_annual_premium: +0.013",
+  "C2": "This claim has a fraud risk score of 0.79, above the referral threshold of 0.49. The factors raising the score are: incident severity recorded as major damage (yes); property component of the claim ($5,780); annual premium ($1,237.88). The factors lowering the score are: policyholder hobby recorded as chess (no); policyholder hobby recorded as cross-fit (no). Recommended check: verify the evidence behind the strongest factor, incident severity recorded as major damage.",
+  "C2_fidelity": {
+   "driver_recall": 1.0,
+   "sign_accuracy": 1.0,
+   "signs_stated": 2,
+   "non_driver_features_mentioned": 0,
+   "words": 70
+  },
+  "input_block": "Fraud risk score: 0.79 (referral threshold 0.49).\n\nCLAIM DETAILS\nPolicy: state IL, combined single limit 250/500, deductible $500, annual premium $1,237.88, umbrella limit $0, customer for 405 months, policy in force 994 days at the incident date.\nPolicyholder: age 58, male, education MD, occupation exec-managerial, hobby exercise.\nIncident: Single Vehicle Collision, collision type Front Collision, severity Major Damage, 1 vehicle(s), 0 bodily injur(ies), 0 witness(es), authorities contacted: Police, police report available: not recorded, property damage: not recorded, hour 11:00, NY.\nClaim: total $63,580 (injury $5,780, property $5,780, vehicle $52,020); vehicle Mercedes 1997.\n\nTOP FIVE MODEL FACTORS (SHAP, largest first)\n1. incident severity recorded as major damage (this claim: yes) - raises the fraud score (SHAP +0.305)\n2. policyholder hobby recorded as chess (this claim: no) - lowers the fraud score (SHAP -0.022)\n3. policyholder hobby recorded as cross-fit (this claim: no) - lowers the fraud score (SHAP -0.020)\n4. property component of the claim (this claim: $5,780) - raises the fraud score (SHAP +0.013)\n5. annual premium (this claim: $1,237.88) - raises the fraud score (SHAP +0.013)"
+ },
+ {
+  "idx": 98,
+  "prob": 0.781,
+  "true_label": 1,
+  "C0": "Fraud risk score 0.78 (threshold 0.49); risk band ELEVATED. Claim referred for review.",
+  "C1": "Fraud risk score 0.78 (threshold 0.49); risk band ELEVATED. Claim referred for review.\nTop factors (SHAP, fraud probability scale):\nincident_severity_Major Damage: +0.303\ninsured_hobbies_cross-fit: -0.023\ninsured_hobbies_chess: -0.022\npolicy_annual_premium: -0.022\npolicy_tenure_days: +0.016",
+  "C2": "This claim has a fraud risk score of 0.78, above the referral threshold of 0.49. The factors raising the score are: incident severity recorded as major damage (yes); time between policy start and incident (5,513 days). The factors lowering the score are: policyholder hobby recorded as cross-fit (no); policyholder hobby recorded as chess (no); annual premium ($1,099.95). Recommended check: verify the evidence behind the strongest factor, incident severity recorded as major damage.",
+  "C2_fidelity": {
+   "driver_recall": 1.0,
+   "sign_accuracy": 1.0,
+   "signs_stated": 2,
+   "non_driver_features_mentioned": 0,
+   "words": 72
+  },
+  "input_block": "Fraud risk score: 0.78 (referral threshold 0.49).\n\nCLAIM DETAILS\nPolicy: state OH, combined single limit 250/500, deductible $1,000, annual premium $1,099.95, umbrella limit $0, customer for 65 months, policy in force 5,513 days at the incident date.\nPolicyholder: age 23, female, education College, occupation sales, hobby dancing.\nIncident: Single Vehicle Collision, collision type Side Collision, severity Major Damage, 1 vehicle(s), 1 bodily injur(ies), 0 witness(es), authorities contacted: Other, police report available: YES, property damage: NO, hour 14:00, NY.\nClaim: total $52,400 (injury $6,550, property $6,550, vehicle $39,300); vehicle Accura 2005.\n\nTOP FIVE MODEL FACTORS (SHAP, largest first)\n1. incident severity recorded as major damage (this claim: yes) - raises the fraud score (SHAP +0.303)\n2. policyholder hobby recorded as cross-fit (this claim: no) - lowers the fraud score (SHAP -0.023)\n3. policyholder hobby recorded as chess (this claim: no) - lowers the fraud score (SHAP -0.022)\n4. annual premium (this claim: $1,099.95) - lowers the fraud score (SHAP -0.022)\n5. time between policy start and incident (this claim: 5,513 days) - raises the fraud score (SHAP +0.016)"
+ },
+ {
+  "idx": 99,
+  "prob": 0.808,
+  "true_label": 1,
+  "C0": "Fraud risk score 0.81 (threshold 0.49); risk band HIGH. Claim referred for review.",
+  "C1": "Fraud risk score 0.81 (threshold 0.49); risk band HIGH. Claim referred for review.\nTop factors (SHAP, fraud probability scale):\nincident_severity_Major Damage: +0.306\nproperty_claim: +0.026\ninsured_hobbies_chess: -0.020\ninsured_hobbies_cross-fit: -0.020\npolicy_tenure_days: -0.016",
+  "C2": "This claim has a fraud risk score of 0.81, above the referral threshold of 0.49. The factors raising the score are: incident severity recorded as major damage (yes); property component of the claim ($6,100). The factors lowering the score are: policyholder hobby recorded as chess (no); policyholder hobby recorded as cross-fit (no); time between policy start and incident (805 days). Recommended check: verify the evidence behind the strongest factor, incident severity recorded as major damage.",
+  "C2_fidelity": {
+   "driver_recall": 1.0,
+   "sign_accuracy": 1.0,
+   "signs_stated": 2,
+   "non_driver_features_mentioned": 0,
+   "words": 75
+  },
+  "input_block": "Fraud risk score: 0.81 (referral threshold 0.49).\n\nCLAIM DETAILS\nPolicy: state OH, combined single limit 100/300, deductible $500, annual premium $1,195.01, umbrella limit $0, customer for 283 months, policy in force 805 days at the incident date.\nPolicyholder: age 41, female, education Associate, occupation sales, hobby reading.\nIncident: Multi-vehicle Collision, collision type Side Collision, severity Major Damage, 3 vehicle(s), 0 bodily injur(ies), 2 witness(es), authorities contacted: Other, police report available: not recorded, property damage: NO, hour 13:00, WV.\nClaim: total $42,700 (injury $0, property $6,100, vehicle $36,600); vehicle Mercedes 2011.\n\nTOP FIVE MODEL FACTORS (SHAP, largest first)\n1. incident severity recorded as major damage (this claim: yes) - raises the fraud score (SHAP +0.306)\n2. property component of the claim (this claim: $6,100) - raises the fraud score (SHAP +0.026)\n3. policyholder hobby recorded as chess (this claim: no) - lowers the fraud score (SHAP -0.020)\n4. policyholder hobby recorded as cross-fit (this claim: no) - lowers the fraud score (SHAP -0.020)\n5. time between policy start and incident (this claim: 805 days) - lowers the fraud score (SHAP -0.016)"
+ },
+ {
+  "idx": 103,
+  "prob": 0.812,
+  "true_label": 0,
+  "C0": "Fraud risk score 0.81 (threshold 0.49); risk band HIGH. Claim referred for review.",
+  "C1": "Fraud risk score 0.81 (threshold 0.49); risk band HIGH. Claim referred for review.\nTop factors (SHAP, fraud probability scale):\ninsured_hobbies_cross-fit: +0.467\nincident_severity_Major Damage: -0.143\npolicy_annual_premium: -0.033\ninsured_hobbies_chess: -0.021\npolicy_tenure_days: +0.017",
+  "C2": "This claim has a fraud risk score of 0.81, above the referral threshold of 0.49. The factors raising the score are: policyholder hobby recorded as cross-fit (yes); time between policy start and incident (6,305 days). The factors lowering the score are: incident severity recorded as major damage (no (Total Loss)); annual premium ($1,829.63); policyholder hobby recorded as chess (no). Recommended check: verify the evidence behind the strongest factor, policyholder hobby recorded as cross-fit.",
+  "C2_fidelity": {
+   "driver_recall": 1.0,
+   "sign_accuracy": 1.0,
+   "signs_stated": 2,
+   "non_driver_features_mentioned": 0,
+   "words": 73
+  },
+  "input_block": "Fraud risk score: 0.81 (referral threshold 0.49).\n\nCLAIM DETAILS\nPolicy: state IL, combined single limit 100/300, deductible $1,000, annual premium $1,829.63, umbrella limit $0, customer for 15 months, policy in force 6,305 days at the incident date.\nPolicyholder: age 34, male, education JD, occupation tech-support, hobby cross-fit.\nIncident: Multi-vehicle Collision, collision type Side Collision, severity Total Loss, 3 vehicle(s), 1 bodily injur(ies), 0 witness(es), authorities contacted: Other, police report available: not recorded, property damage: YES, hour 21:00, SC.\nClaim: total $67,650 (injury $12,300, property $6,150, vehicle $49,200); vehicle Audi 2009.\n\nTOP FIVE MODEL FACTORS (SHAP, largest first)\n1. policyholder hobby recorded as cross-fit (this claim: yes) - raises the fraud score (SHAP +0.467)\n2. incident severity recorded as major damage (this claim: no (Total Loss)) - lowers the fraud score (SHAP -0.143)\n3. annual premium (this claim: $1,829.63) - lowers the fraud score (SHAP -0.033)\n4. policyholder hobby recorded as chess (this claim: no) - lowers the fraud score (SHAP -0.021)\n5. time between policy start and incident (this claim: 6,305 days) - raises the fraud score (SHAP +0.017)"
+ },
+ {
+  "idx": 105,
+  "prob": 0.515,
+  "true_label": 1,
+  "C0": "Fraud risk score 0.52 (threshold 0.49); risk band MODERATE. Claim referred for review.",
+  "C1": "Fraud risk score 0.52 (threshold 0.49); risk band MODERATE. Claim referred for review.\nTop factors (SHAP, fraud probability scale):\nincident_severity_Major Damage: +0.256\npolicy_tenure_days: -0.161\ninsured_hobbies_cross-fit: -0.024\ninsured_hobbies_chess: -0.020\nproperty_claim: -0.020",
+  "C2": "This claim has a fraud risk score of 0.52, above the referral threshold of 0.49. The factors raising the score are: incident severity recorded as major damage (yes). The factors lowering the score are: time between policy start and incident (9,124 days); policyholder hobby recorded as cross-fit (no); policyholder hobby recorded as chess (no); property component of the claim ($11,700). Recommended check: verify the evidence behind the strongest factor, incident severity recorded as major damage.",
+  "C2_fidelity": {
+   "driver_recall": 1.0,
+   "sign_accuracy": 1.0,
+   "signs_stated": 2,
+   "non_driver_features_mentioned": 0,
+   "words": 75
+  },
+  "input_block": "Fraud risk score: 0.52 (referral threshold 0.49).\n\nCLAIM DETAILS\nPolicy: state IL, combined single limit 100/300, deductible $2,000, annual premium $694.45, umbrella limit $0, customer for 108 months, policy in force 9,124 days at the incident date.\nPolicyholder: age 33, female, education JD, occupation armed-forces, hobby exercise.\nIncident: Multi-vehicle Collision, collision type Side Collision, severity Major Damage, 3 vehicle(s), 0 bodily injur(ies), 1 witness(es), authorities contacted: Police, police report available: YES, property damage: not recorded, hour 6:00, WV.\nClaim: total $64,350 (injury $5,850, property $11,700, vehicle $46,800); vehicle Nissan 2011.\n\nTOP FIVE MODEL FACTORS (SHAP, largest first)\n1. incident severity recorded as major damage (this claim: yes) - raises the fraud score (SHAP +0.256)\n2. time between policy start and incident (this claim: 9,124 days) - lowers the fraud score (SHAP -0.161)\n3. policyholder hobby recorded as cross-fit (this claim: no) - lowers the fraud score (SHAP -0.024)\n4. policyholder hobby recorded as chess (this claim: no) - lowers the fraud score (SHAP -0.020)\n5. property component of the claim (this claim: $11,700) - lowers the fraud score (SHAP -0.020)"
+ },
+ {
+  "idx": 106,
+  "prob": 0.746,
+  "true_label": 1,
+  "C0": "Fraud risk score 0.75 (threshold 0.49); risk band ELEVATED. Claim referred for review.",
+  "C1": "Fraud risk score 0.75 (threshold 0.49); risk band ELEVATED. Claim referred for review.\nTop factors (SHAP, fraud probability scale):\nincident_severity_Major Damage: +0.309\nproperty_claim: -0.034\ninsured_hobbies_chess: -0.023\ninsured_hobbies_cross-fit: -0.022\npolicy_annual_premium: -0.022",
+  "C2": "This claim has a fraud risk score of 0.75, above the referral threshold of 0.49. The factors raising the score are: incident severity recorded as major damage (yes). The factors lowering the score are: property component of the claim ($0); policyholder hobby recorded as chess (no); policyholder hobby recorded as cross-fit (no); annual premium ($1,054.92). Recommended check: verify the evidence behind the strongest factor, incident severity recorded as major damage.",
+  "C2_fidelity": {
+   "driver_recall": 1.0,
+   "sign_accuracy": 1.0,
+   "signs_stated": 2,
+   "non_driver_features_mentioned": 0,
+   "words": 70
+  },
+  "input_block": "Fraud risk score: 0.75 (referral threshold 0.49).\n\nCLAIM DETAILS\nPolicy: state IN, combined single limit 250/500, deductible $500, annual premium $1,054.92, umbrella limit $6,000,000, customer for 147 months, policy in force 6,549 days at the incident date.\nPolicyholder: age 31, female, education PhD, occupation prof-specialty, hobby exercise.\nIncident: Single Vehicle Collision, collision type Front Collision, severity Major Damage, 1 vehicle(s), 0 bodily injur(ies), 0 witness(es), authorities contacted: Other, police report available: not recorded, property damage: not recorded, hour 4:00, NY.\nClaim: total $68,240 (injury $8,530, property $0, vehicle $59,710); vehicle Toyota 2013.\n\nTOP FIVE MODEL FACTORS (SHAP, largest first)\n1. incident severity recorded as major damage (this claim: yes) - raises the fraud score (SHAP +0.309)\n2. property component of the claim (this claim: $0) - lowers the fraud score (SHAP -0.034)\n3. policyholder hobby recorded as chess (this claim: no) - lowers the fraud score (SHAP -0.023)\n4. policyholder hobby recorded as cross-fit (this claim: no) - lowers the fraud score (SHAP -0.022)\n5. annual premium (this claim: $1,054.92) - lowers the fraud score (SHAP -0.022)"
+ },
+ {
+  "idx": 112,
+  "prob": 0.837,
+  "true_label": 0,
+  "C0": "Fraud risk score 0.84 (threshold 0.49); risk band HIGH. Claim referred for review.",
+  "C1": "Fraud risk score 0.84 (threshold 0.49); risk band HIGH. Claim referred for review.\nTop factors (SHAP, fraud probability scale):\ninsured_hobbies_chess: +0.189\nincident_severity_Major Damage: +0.172\ninjury_claim: -0.027\nproperty_claim: +0.022\ninsured_hobbies_cross-fit: -0.014",
+  "C2": "This claim has a fraud risk score of 0.84, above the referral threshold of 0.49. The factors raising the score are: policyholder hobby recorded as chess (yes); incident severity recorded as major damage (yes); property component of the claim ($6,270). The factors lowering the score are: injury component of the claim ($0); policyholder hobby recorded as cross-fit (no). Recommended check: verify the evidence behind the strongest factor, policyholder hobby recorded as chess.",
+  "C2_fidelity": {
+   "driver_recall": 1.0,
+   "sign_accuracy": 1.0,
+   "signs_stated": 2,
+   "non_driver_features_mentioned": 0,
+   "words": 72
+  },
+  "input_block": "Fraud risk score: 0.84 (referral threshold 0.49).\n\nCLAIM DETAILS\nPolicy: state IN, combined single limit 250/500, deductible $500, annual premium $1,082.49, umbrella limit $0, customer for 439 months, policy in force 2,291 days at the incident date.\nPolicyholder: age 56, female, education PhD, occupation prof-specialty, hobby chess.\nIncident: Multi-vehicle Collision, collision type Front Collision, severity Major Damage, 3 vehicle(s), 2 bodily injur(ies), 3 witness(es), authorities contacted: Fire, police report available: not recorded, property damage: not recorded, hour 12:00, SC.\nClaim: total $56,430 (injury $0, property $6,270, vehicle $50,160); vehicle Honda 2014.\n\nTOP FIVE MODEL FACTORS (SHAP, largest first)\n1. policyholder hobby recorded as chess (this claim: yes) - raises the fraud score (SHAP +0.189)\n2. incident severity recorded as major damage (this claim: yes) - raises the fraud score (SHAP +0.172)\n3. injury component of the claim (this claim: $0) - lowers the fraud score (SHAP -0.027)\n4. property component of the claim (this claim: $6,270) - raises the fraud score (SHAP +0.022)\n5. policyholder hobby recorded as cross-fit (this claim: no) - lowers the fraud score (SHAP -0.014)"
+ },
+ {
+  "idx": 113,
+  "prob": 0.772,
+  "true_label": 1,
+  "C0": "Fraud risk score 0.77 (threshold 0.49); risk band ELEVATED. Claim referred for review.",
+  "C1": "Fraud risk score 0.77 (threshold 0.49); risk band ELEVATED. Claim referred for review.\nTop factors (SHAP, fraud probability scale):\nincident_severity_Major Damage: +0.300\ninsured_hobbies_cross-fit: -0.024\npolicy_annual_premium: -0.024\ninsured_hobbies_chess: -0.023\nproperty_claim: +0.011",
+  "C2": "This claim has a fraud risk score of 0.77, above the referral threshold of 0.49. The factors raising the score are: incident severity recorded as major damage (yes); property component of the claim ($6,800). The factors lowering the score are: policyholder hobby recorded as cross-fit (no); annual premium ($1,055.60); policyholder hobby recorded as chess (no). Recommended check: verify the evidence behind the strongest factor, incident severity recorded as major damage.",
+  "C2_fidelity": {
+   "driver_recall": 1.0,
+   "sign_accuracy": 1.0,
+   "signs_stated": 2,
+   "non_driver_features_mentioned": 0,
+   "words": 70
+  },
+  "input_block": "Fraud risk score: 0.77 (referral threshold 0.49).\n\nCLAIM DETAILS\nPolicy: state IN, combined single limit 100/300, deductible $500, annual premium $1,055.60, umbrella limit $0, customer for 250 months, policy in force 3,691 days at the incident date.\nPolicyholder: age 42, male, education High School, occupation exec-managerial, hobby paintball.\nIncident: Single Vehicle Collision, collision type Rear Collision, severity Major Damage, 1 vehicle(s), 1 bodily injur(ies), 1 witness(es), authorities contacted: Other, police report available: not recorded, property damage: not recorded, hour 16:00, SC.\nClaim: total $74,800 (injury $13,600, property $6,800, vehicle $54,400); vehicle Ford 2009.\n\nTOP FIVE MODEL FACTORS (SHAP, largest first)\n1. incident severity recorded as major damage (this claim: yes) - raises the fraud score (SHAP +0.300)\n2. policyholder hobby recorded as cross-fit (this claim: no) - lowers the fraud score (SHAP -0.024)\n3. annual premium (this claim: $1,055.60) - lowers the fraud score (SHAP -0.024)\n4. policyholder hobby recorded as chess (this claim: no) - lowers the fraud score (SHAP -0.023)\n5. property component of the claim (this claim: $6,800) - raises the fraud score (SHAP +0.011)"
+ },
+ {
+  "idx": 115,
+  "prob": 0.783,
+  "true_label": 0,
+  "C0": "Fraud risk score 0.78 (threshold 0.49); risk band ELEVATED. Claim referred for review.",
+  "C1": "Fraud risk score 0.78 (threshold 0.49); risk band ELEVATED. Claim referred for review.\nTop factors (SHAP, fraud probability scale):\nincident_severity_Major Damage: +0.305\ninsured_hobbies_cross-fit: -0.024\ninsured_hobbies_chess: -0.023\npolicy_annual_premium: -0.020\nvehicle_claim: +0.017",
+  "C2": "This claim has a fraud risk score of 0.78, above the referral threshold of 0.49. The factors raising the score are: incident severity recorded as major damage (yes); vehicle component of the claim ($49,840). The factors lowering the score are: policyholder hobby recorded as cross-fit (no); policyholder hobby recorded as chess (no); annual premium ($1,061.33). Recommended check: verify the evidence behind the strongest factor, incident severity recorded as major damage.",
+  "C2_fidelity": {
+   "driver_recall": 1.0,
+   "sign_accuracy": 1.0,
+   "signs_stated": 2,
+   "non_driver_features_mentioned": 0,
+   "words": 70
+  },
+  "input_block": "Fraud risk score: 0.78 (referral threshold 0.49).\n\nCLAIM DETAILS\nPolicy: state OH, combined single limit 100/300, deductible $1,000, annual premium $1,061.33, umbrella limit $0, customer for 128 months, policy in force 7,638 days at the incident date.\nPolicyholder: age 30, male, education MD, occupation machine-op-inspct, hobby movies.\nIncident: Single Vehicle Collision, collision type Front Collision, severity Major Damage, 1 vehicle(s), 0 bodily injur(ies), 3 witness(es), authorities contacted: Ambulance, police report available: NO, property damage: NO, hour 8:00, WV.\nClaim: total $68,530 (injury $12,460, property $6,230, vehicle $49,840); vehicle Audi 1997.\n\nTOP FIVE MODEL FACTORS (SHAP, largest first)\n1. incident severity recorded as major damage (this claim: yes) - raises the fraud score (SHAP +0.305)\n2. policyholder hobby recorded as cross-fit (this claim: no) - lowers the fraud score (SHAP -0.024)\n3. policyholder hobby recorded as chess (this claim: no) - lowers the fraud score (SHAP -0.023)\n4. annual premium (this claim: $1,061.33) - lowers the fraud score (SHAP -0.020)\n5. vehicle component of the claim (this claim: $49,840) - raises the fraud score (SHAP +0.017)"
+ },
+ {
+  "idx": 119,
+  "prob": 0.76,
+  "true_label": 0,
+  "C0": "Fraud risk score 0.76 (threshold 0.49); risk band ELEVATED. Claim referred for review.",
+  "C1": "Fraud risk score 0.76 (threshold 0.49); risk band ELEVATED. Claim referred for review.\nTop factors (SHAP, fraud probability scale):\nincident_severity_Major Damage: +0.271\ninsured_hobbies_cross-fit: -0.024\ninsured_hobbies_chess: -0.021\ntotal_claim_amount: +0.019\npolicy_tenure_days: +0.015",
+  "C2": "This claim has a fraud risk score of 0.76, above the referral threshold of 0.49. The factors raising the score are: incident severity recorded as major damage (yes); total claim amount ($83,160); time between policy start and incident (4,745 days). The factors lowering the score are: policyholder hobby recorded as cross-fit (no); policyholder hobby recorded as chess (no). Recommended check: verify the evidence behind the strongest factor, incident severity recorded as major damage.",
+  "C2_fidelity": {
+   "driver_recall": 1.0,
+   "sign_accuracy": 1.0,
+   "signs_stated": 2,
+   "non_driver_features_mentioned": 0,
+   "words": 73
+  },
+  "input_block": "Fraud risk score: 0.76 (referral threshold 0.49).\n\nCLAIM DETAILS\nPolicy: state OH, combined single limit 500/1000, deductible $500, annual premium $1,093.07, umbrella limit $4,000,000, customer for 138 months, policy in force 4,745 days at the incident date.\nPolicyholder: age 30, female, education PhD, occupation other-service, hobby reading.\nIncident: Single Vehicle Collision, collision type Front Collision, severity Major Damage, 1 vehicle(s), 2 bodily injur(ies), 2 witness(es), authorities contacted: Other, police report available: NO, property damage: not recorded, hour 0:00, VA.\nClaim: total $83,160 (injury $6,930, property $13,860, vehicle $62,370); vehicle Volkswagen 2011.\n\nTOP FIVE MODEL FACTORS (SHAP, largest first)\n1. incident severity recorded as major damage (this claim: yes) - raises the fraud score (SHAP +0.271)\n2. policyholder hobby recorded as cross-fit (this claim: no) - lowers the fraud score (SHAP -0.024)\n3. policyholder hobby recorded as chess (this claim: no) - lowers the fraud score (SHAP -0.021)\n4. total claim amount (this claim: $83,160) - raises the fraud score (SHAP +0.019)\n5. time between policy start and incident (this claim: 4,745 days) - raises the fraud score (SHAP +0.015)"
+ },
+ {
+  "idx": 120,
+  "prob": 0.778,
+  "true_label": 1,
+  "C0": "Fraud risk score 0.78 (threshold 0.49); risk band ELEVATED. Claim referred for review.",
+  "C1": "Fraud risk score 0.78 (threshold 0.49); risk band ELEVATED. Claim referred for review.\nTop factors (SHAP, fraud probability scale):\ninsured_hobbies_chess: +0.194\nincident_severity_Major Damage: +0.173\npolicy_tenure_days: -0.040\ninjury_claim: -0.037\nproperty_claim: +0.019",
+  "C2": "This claim has a fraud risk score of 0.78, above the referral threshold of 0.49. The factors raising the score are: policyholder hobby recorded as chess (yes); incident severity recorded as major damage (yes); property component of the claim ($7,910). The factors lowering the score are: time between policy start and incident (8,464 days); injury component of the claim ($0). Recommended check: verify the evidence behind the strongest factor, policyholder hobby recorded as chess.",
+  "C2_fidelity": {
+   "driver_recall": 1.0,
+   "sign_accuracy": 1.0,
+   "signs_stated": 2,
+   "non_driver_features_mentioned": 0,
+   "words": 74
+  },
+  "input_block": "Fraud risk score: 0.78 (referral threshold 0.49).\n\nCLAIM DETAILS\nPolicy: state OH, combined single limit 250/500, deductible $500, annual premium $920.81, umbrella limit $0, customer for 231 months, policy in force 8,464 days at the incident date.\nPolicyholder: age 37, female, education High School, occupation sales, hobby chess.\nIncident: Single Vehicle Collision, collision type Rear Collision, severity Major Damage, 1 vehicle(s), 2 bodily injur(ies), 0 witness(es), authorities contacted: Fire, police report available: not recorded, property damage: YES, hour 14:00, SC.\nClaim: total $71,190 (injury $0, property $7,910, vehicle $63,280); vehicle Mercedes 1997.\n\nTOP FIVE MODEL FACTORS (SHAP, largest first)\n1. policyholder hobby recorded as chess (this claim: yes) - raises the fraud score (SHAP +0.194)\n2. incident severity recorded as major damage (this claim: yes) - raises the fraud score (SHAP +0.173)\n3. time between policy start and incident (this claim: 8,464 days) - lowers the fraud score (SHAP -0.040)\n4. injury component of the claim (this claim: $0) - lowers the fraud score (SHAP -0.037)\n5. property component of the claim (this claim: $7,910) - raises the fraud score (SHAP +0.019)"
+ },
+ {
+  "idx": 121,
+  "prob": 0.88,
+  "true_label": 1,
+  "C0": "Fraud risk score 0.88 (threshold 0.49); risk band HIGH. Claim referred for review.",
+  "C1": "Fraud risk score 0.88 (threshold 0.49); risk band HIGH. Claim referred for review.\nTop factors (SHAP, fraud probability scale):\ninsured_hobbies_cross-fit: +0.477\nincident_severity_Major Damage: -0.139\ntotal_claim_amount: +0.023\ninsured_hobbies_chess: -0.022\npolicy_tenure_days: +0.017",
+  "C2": "This claim has a fraud risk score of 0.88, above the referral threshold of 0.49. The factors raising the score are: policyholder hobby recorded as cross-fit (yes); total claim amount ($81,840); time between policy start and incident (5,936 days). The factors lowering the score are: incident severity recorded as major damage (no (Minor Damage)); policyholder hobby recorded as chess (no). Recommended check: verify the evidence behind the strongest factor, policyholder hobby recorded as cross-fit.",
+  "C2_fidelity": {
+   "driver_recall": 1.0,
+   "sign_accuracy": 1.0,
+   "signs_stated": 2,
+   "non_driver_features_mentioned": 0,
+   "words": 74
+  },
+  "input_block": "Fraud risk score: 0.88 (referral threshold 0.49).\n\nCLAIM DETAILS\nPolicy: state OH, combined single limit 100/300, deductible $500, annual premium $1,382.88, umbrella limit $7,000,000, customer for 86 months, policy in force 5,936 days at the incident date.\nPolicyholder: age 26, male, education JD, occupation tech-support, hobby cross-fit.\nIncident: Single Vehicle Collision, collision type Rear Collision, severity Minor Damage, 1 vehicle(s), 1 bodily injur(ies), 1 witness(es), authorities contacted: Police, police report available: YES, property damage: not recorded, hour 11:00, SC.\nClaim: total $81,840 (injury $14,880, property $7,440, vehicle $59,520); vehicle Chevrolet 2011.\n\nTOP FIVE MODEL FACTORS (SHAP, largest first)\n1. policyholder hobby recorded as cross-fit (this claim: yes) - raises the fraud score (SHAP +0.477)\n2. incident severity recorded as major damage (this claim: no (Minor Damage)) - lowers the fraud score (SHAP -0.139)\n3. total claim amount (this claim: $81,840) - raises the fraud score (SHAP +0.023)\n4. policyholder hobby recorded as chess (this claim: no) - lowers the fraud score (SHAP -0.022)\n5. time between policy start and incident (this claim: 5,936 days) - raises the fraud score (SHAP +0.017)"
+ },
+ {
+  "idx": 123,
+  "prob": 0.785,
+  "true_label": 1,
+  "C0": "Fraud risk score 0.79 (threshold 0.49); risk band ELEVATED. Claim referred for review.",
+  "C1": "Fraud risk score 0.79 (threshold 0.49); risk band ELEVATED. Claim referred for review.\nTop factors (SHAP, fraud probability scale):\nincident_severity_Major Damage: +0.301\ninsured_hobbies_cross-fit: -0.022\npolicy_tenure_days: +0.020\ninsured_hobbies_chess: -0.020\nproperty_claim: -0.019",
+  "C2": "This claim has a fraud risk score of 0.79, above the referral threshold of 0.49. The factors raising the score are: incident severity recorded as major damage (yes); time between policy start and incident (4,995 days). The factors lowering the score are: policyholder hobby recorded as cross-fit (no); policyholder hobby recorded as chess (no); property component of the claim ($14,120). Recommended check: verify the evidence behind the strongest factor, incident severity recorded as major damage.",
+  "C2_fidelity": {
+   "driver_recall": 1.0,
+   "sign_accuracy": 1.0,
+   "signs_stated": 2,
+   "non_driver_features_mentioned": 0,
+   "words": 75
+  },
+  "input_block": "Fraud risk score: 0.79 (referral threshold 0.49).\n\nCLAIM DETAILS\nPolicy: state OH, combined single limit 250/500, deductible $500, annual premium $1,483.91, umbrella limit $8,000,000, customer for 232 months, policy in force 4,995 days at the incident date.\nPolicyholder: age 43, male, education College, occupation machine-op-inspct, hobby golf.\nIncident: Multi-vehicle Collision, collision type Rear Collision, severity Major Damage, 3 vehicle(s), 0 bodily injur(ies), 1 witness(es), authorities contacted: Ambulance, police report available: not recorded, property damage: NO, hour 17:00, NY.\nClaim: total $70,600 (injury $7,060, property $14,120, vehicle $49,420); vehicle Volkswagen 2013.\n\nTOP FIVE MODEL FACTORS (SHAP, largest first)\n1. incident severity recorded as major damage (this claim: yes) - raises the fraud score (SHAP +0.301)\n2. policyholder hobby recorded as cross-fit (this claim: no) - lowers the fraud score (SHAP -0.022)\n3. time between policy start and incident (this claim: 4,995 days) - raises the fraud score (SHAP +0.020)\n4. policyholder hobby recorded as chess (this claim: no) - lowers the fraud score (SHAP -0.020)\n5. property component of the claim (this claim: $14,120) - lowers the fraud score (SHAP -0.019)"
+ },
+ {
+  "idx": 124,
+  "prob": 0.778,
+  "true_label": 1,
+  "C0": "Fraud risk score 0.78 (threshold 0.49); risk band ELEVATED. Claim referred for review.",
+  "C1": "Fraud risk score 0.78 (threshold 0.49); risk band ELEVATED. Claim referred for review.\nTop factors (SHAP, fraud probability scale):\ninsured_hobbies_chess: +0.485\nincident_severity_Major Damage: -0.139\npolicy_tenure_days: -0.058\ninsured_hobbies_cross-fit: -0.022\nproperty_claim: +0.007",
+  "C2": "This claim has a fraud risk score of 0.78, above the referral threshold of 0.49. The factors raising the score are: policyholder hobby recorded as chess (yes); property component of the claim ($8,410). The factors lowering the score are: incident severity recorded as major damage (no (Minor Damage)); time between policy start and incident (8,703 days); policyholder hobby recorded as cross-fit (no). Recommended check: verify the evidence behind the strongest factor, policyholder hobby recorded as chess.",
+  "C2_fidelity": {
+   "driver_recall": 1.0,
+   "sign_accuracy": 1.0,
+   "signs_stated": 2,
+   "non_driver_features_mentioned": 0,
+   "words": 76
+  },
+  "input_block": "Fraud risk score: 0.78 (referral threshold 0.49).\n\nCLAIM DETAILS\nPolicy: state OH, combined single limit 250/500, deductible $2,000, annual premium $945.73, umbrella limit $5,000,000, customer for 272 months, policy in force 8,703 days at the incident date.\nPolicyholder: age 41, male, education MD, occupation protective-serv, hobby chess.\nIncident: Single Vehicle Collision, collision type Front Collision, severity Minor Damage, 1 vehicle(s), 0 bodily injur(ies), 0 witness(es), authorities contacted: Fire, police report available: NO, property damage: NO, hour 23:00, NY.\nClaim: total $84,100 (injury $16,820, property $8,410, vehicle $58,870); vehicle Ford 2009.\n\nTOP FIVE MODEL FACTORS (SHAP, largest first)\n1. policyholder hobby recorded as chess (this claim: yes) - raises the fraud score (SHAP +0.485)\n2. incident severity recorded as major damage (this claim: no (Minor Damage)) - lowers the fraud score (SHAP -0.139)\n3. time between policy start and incident (this claim: 8,703 days) - lowers the fraud score (SHAP -0.058)\n4. policyholder hobby recorded as cross-fit (this claim: no) - lowers the fraud score (SHAP -0.022)\n5. property component of the claim (this claim: $8,410) - raises the fraud score (SHAP +0.007)"
+ },
+ {
+  "idx": 125,
+  "prob": 0.893,
+  "true_label": 0,
+  "C0": "Fraud risk score 0.89 (threshold 0.49); risk band HIGH. Claim referred for review.",
+  "C1": "Fraud risk score 0.89 (threshold 0.49); risk band HIGH. Claim referred for review.\nTop factors (SHAP, fraud probability scale):\ninsured_hobbies_cross-fit: +0.238\nincident_severity_Major Damage: +0.160\npolicy_tenure_days: +0.017\ninsured_hobbies_chess: -0.013\nvehicle_claim: +0.012",
+  "C2": "This claim has a fraud risk score of 0.89, above the referral threshold of 0.49. The factors raising the score are: policyholder hobby recorded as cross-fit (yes); incident severity recorded as major damage (yes); time between policy start and incident (5,343 days); vehicle component of the claim ($43,680). The factors lowering the score are: policyholder hobby recorded as chess (no). Recommended check: verify the evidence behind the strongest factor, policyholder hobby recorded as cross-fit.",
+  "C2_fidelity": {
+   "driver_recall": 1.0,
+   "sign_accuracy": 1.0,
+   "signs_stated": 2,
+   "non_driver_features_mentioned": 0,
+   "words": 74
+  },
+  "input_block": "Fraud risk score: 0.89 (referral threshold 0.49).\n\nCLAIM DETAILS\nPolicy: state OH, combined single limit 500/1000, deductible $2,000, annual premium $979.26, umbrella limit $0, customer for 140 months, policy in force 5,343 days at the incident date.\nPolicyholder: age 36, female, education JD, occupation transport-moving, hobby cross-fit.\nIncident: Multi-vehicle Collision, collision type Front Collision, severity Major Damage, 4 vehicle(s), 0 bodily injur(ies), 2 witness(es), authorities contacted: Fire, police report available: YES, property damage: YES, hour 2:00, NY.\nClaim: total $72,800 (injury $14,560, property $14,560, vehicle $43,680); vehicle Honda 1998.\n\nTOP FIVE MODEL FACTORS (SHAP, largest first)\n1. policyholder hobby recorded as cross-fit (this claim: yes) - raises the fraud score (SHAP +0.238)\n2. incident severity recorded as major damage (this claim: yes) - raises the fraud score (SHAP +0.160)\n3. time between policy start and incident (this claim: 5,343 days) - raises the fraud score (SHAP +0.017)\n4. policyholder hobby recorded as chess (this claim: no) - lowers the fraud score (SHAP -0.013)\n5. vehicle component of the claim (this claim: $43,680) - raises the fraud score (SHAP +0.012)"
+ },
+ {
+  "idx": 126,
+  "prob": 0.758,
+  "true_label": 1,
+  "C0": "Fraud risk score 0.76 (threshold 0.49); risk band ELEVATED. Claim referred for review.",
+  "C1": "Fraud risk score 0.76 (threshold 0.49); risk band ELEVATED. Claim referred for review.\nTop factors (SHAP, fraud probability scale):\nincident_severity_Major Damage: +0.296\ninsured_hobbies_cross-fit: -0.024\ninsured_hobbies_chess: -0.021\npolicy_tenure_days: +0.019\nproperty_claim: -0.015",
+  "C2": "This claim has a fraud risk score of 0.76, above the referral threshold of 0.49. The factors raising the score are: incident severity recorded as major damage (yes); time between policy start and incident (5,559 days). The factors lowering the score are: policyholder hobby recorded as cross-fit (no); policyholder hobby recorded as chess (no); property component of the claim ($14,840). Recommended check: verify the evidence behind the strongest factor, incident severity recorded as major damage.",
+  "C2_fidelity": {
+   "driver_recall": 1.0,
+   "sign_accuracy": 1.0,
+   "signs_stated": 2,
+   "non_driver_features_mentioned": 0,
+   "words": 75
+  },
+  "input_block": "Fraud risk score: 0.76 (referral threshold 0.49).\n\nCLAIM DETAILS\nPolicy: state IL, combined single limit 100/300, deductible $1,000, annual premium $904.70, umbrella limit $7,000,000, customer for 230 months, policy in force 5,559 days at the incident date.\nPolicyholder: age 39, female, education MD, occupation craft-repair, hobby bungie-jumping.\nIncident: Single Vehicle Collision, collision type Front Collision, severity Major Damage, 1 vehicle(s), 1 bodily injur(ies), 3 witness(es), authorities contacted: Fire, police report available: NO, property damage: not recorded, hour 0:00, SC.\nClaim: total $74,200 (injury $14,840, property $14,840, vehicle $44,520); vehicle Accura 2002.\n\nTOP FIVE MODEL FACTORS (SHAP, largest first)\n1. incident severity recorded as major damage (this claim: yes) - raises the fraud score (SHAP +0.296)\n2. policyholder hobby recorded as cross-fit (this claim: no) - lowers the fraud score (SHAP -0.024)\n3. policyholder hobby recorded as chess (this claim: no) - lowers the fraud score (SHAP -0.021)\n4. time between policy start and incident (this claim: 5,559 days) - raises the fraud score (SHAP +0.019)\n5. property component of the claim (this claim: $14,840) - lowers the fraud score (SHAP -0.015)"
+ },
+ {
+  "idx": 134,
+  "prob": 0.836,
+  "true_label": 1,
+  "C0": "Fraud risk score 0.84 (threshold 0.49); risk band HIGH. Claim referred for review.",
+  "C1": "Fraud risk score 0.84 (threshold 0.49); risk band HIGH. Claim referred for review.\nTop factors (SHAP, fraud probability scale):\nincident_severity_Major Damage: +0.319\nproperty_claim: +0.023\ninsured_hobbies_chess: -0.022\ninsured_hobbies_cross-fit: -0.021\npolicy_tenure_days: +0.012",
+  "C2": "This claim has a fraud risk score of 0.84, above the referral threshold of 0.49. The factors raising the score are: incident severity recorded as major damage (yes); property component of the claim ($7,560); time between policy start and incident (7,561 days). The factors lowering the score are: policyholder hobby recorded as chess (no); policyholder hobby recorded as cross-fit (no). Recommended check: verify the evidence behind the strongest factor, incident severity recorded as major damage.",
+  "C2_fidelity": {
+   "driver_recall": 1.0,
+   "sign_accuracy": 1.0,
+   "signs_stated": 2,
+   "non_driver_features_mentioned": 0,
+   "words": 75
+  },
+  "input_block": "Fraud risk score: 0.84 (referral threshold 0.49).\n\nCLAIM DETAILS\nPolicy: state IL, combined single limit 500/1000, deductible $1,000, annual premium $1,389.59, umbrella limit $0, customer for 168 months, policy in force 7,561 days at the incident date.\nPolicyholder: age 39, female, education Masters, occupation machine-op-inspct, hobby exercise.\nIncident: Multi-vehicle Collision, collision type Rear Collision, severity Major Damage, 3 vehicle(s), 1 bodily injur(ies), 3 witness(es), authorities contacted: Fire, police report available: NO, property damage: YES, hour 23:00, NY.\nClaim: total $41,580 (injury $3,780, property $7,560, vehicle $30,240); vehicle Chevrolet 2015.\n\nTOP FIVE MODEL FACTORS (SHAP, largest first)\n1. incident severity recorded as major damage (this claim: yes) - raises the fraud score (SHAP +0.319)\n2. property component of the claim (this claim: $7,560) - raises the fraud score (SHAP +0.023)\n3. policyholder hobby recorded as chess (this claim: no) - lowers the fraud score (SHAP -0.022)\n4. policyholder hobby recorded as cross-fit (this claim: no) - lowers the fraud score (SHAP -0.021)\n5. time between policy start and incident (this claim: 7,561 days) - raises the fraud score (SHAP +0.012)"
+ },
+ {
+  "idx": 141,
+  "prob": 0.75,
+  "true_label": 0,
+  "C0": "Fraud risk score 0.75 (threshold 0.49); risk band ELEVATED. Claim referred for review.",
+  "C1": "Fraud risk score 0.75 (threshold 0.49); risk band ELEVATED. Claim referred for review.\nTop factors (SHAP, fraud probability scale):\nincident_severity_Major Damage: +0.315\npolicy_tenure_days: -0.050\ninsured_hobbies_chess: -0.024\ninsured_hobbies_cross-fit: -0.022\nproperty_claim: +0.018",
+  "C2": "This claim has a fraud risk score of 0.75, above the referral threshold of 0.49. The factors raising the score are: incident severity recorded as major damage (yes); property component of the claim ($6,040). The factors lowering the score are: time between policy start and incident (8,239 days); policyholder hobby recorded as chess (no); policyholder hobby recorded as cross-fit (no). Recommended check: verify the evidence behind the strongest factor, incident severity recorded as major damage.",
+  "C2_fidelity": {
+   "driver_recall": 1.0,
+   "sign_accuracy": 1.0,
+   "signs_stated": 2,
+   "non_driver_features_mentioned": 0,
+   "words": 75
+  },
+  "input_block": "Fraud risk score: 0.75 (referral threshold 0.49).\n\nCLAIM DETAILS\nPolicy: state IN, combined single limit 500/1000, deductible $2,000, annual premium $1,475.73, umbrella limit $0, customer for 196 months, policy in force 8,239 days at the incident date.\nPolicyholder: age 39, female, education High School, occupation handlers-cleaners, hobby camping.\nIncident: Multi-vehicle Collision, collision type Side Collision, severity Major Damage, 3 vehicle(s), 2 bodily injur(ies), 0 witness(es), authorities contacted: Police, police report available: NO, property damage: not recorded, hour 8:00, VA.\nClaim: total $60,400 (injury $6,040, property $6,040, vehicle $48,320); vehicle Nissan 2014.\n\nTOP FIVE MODEL FACTORS (SHAP, largest first)\n1. incident severity recorded as major damage (this claim: yes) - raises the fraud score (SHAP +0.315)\n2. time between policy start and incident (this claim: 8,239 days) - lowers the fraud score (SHAP -0.050)\n3. policyholder hobby recorded as chess (this claim: no) - lowers the fraud score (SHAP -0.024)\n4. policyholder hobby recorded as cross-fit (this claim: no) - lowers the fraud score (SHAP -0.022)\n5. property component of the claim (this claim: $6,040) - raises the fraud score (SHAP +0.018)"
+ },
+ {
+  "idx": 143,
+  "prob": 0.828,
+  "true_label": 1,
+  "C0": "Fraud risk score 0.83 (threshold 0.49); risk band HIGH. Claim referred for review.",
+  "C1": "Fraud risk score 0.83 (threshold 0.49); risk band HIGH. Claim referred for review.\nTop factors (SHAP, fraud probability scale):\nincident_severity_Major Damage: +0.312\ninsured_hobbies_cross-fit: -0.023\ninsured_hobbies_chess: -0.022\npolicy_tenure_days: +0.017\nvehicle_claim: +0.013",
+  "C2": "This claim has a fraud risk score of 0.83, above the referral threshold of 0.49. The factors raising the score are: incident severity recorded as major damage (yes); time between policy start and incident (4,638 days); vehicle component of the claim ($41,930). The factors lowering the score are: policyholder hobby recorded as cross-fit (no); policyholder hobby recorded as chess (no). Recommended check: verify the evidence behind the strongest factor, incident severity recorded as major damage.",
+  "C2_fidelity": {
+   "driver_recall": 1.0,
+   "sign_accuracy": 1.0,
+   "signs_stated": 2,
+   "non_driver_features_mentioned": 0,
+   "words": 75
+  },
+  "input_block": "Fraud risk score: 0.83 (referral threshold 0.49).\n\nCLAIM DETAILS\nPolicy: state OH, combined single limit 250/500, deductible $2,000, annual premium $1,407.01, umbrella limit $5,000,000, customer for 436 months, policy in force 4,638 days at the incident date.\nPolicyholder: age 58, male, education PhD, occupation tech-support, hobby sleeping.\nIncident: Single Vehicle Collision, collision type Rear Collision, severity Major Damage, 1 vehicle(s), 0 bodily injur(ies), 2 witness(es), authorities contacted: Police, police report available: not recorded, property damage: not recorded, hour 10:00, WV.\nClaim: total $59,900 (injury $11,980, property $5,990, vehicle $41,930); vehicle BMW 1997.\n\nTOP FIVE MODEL FACTORS (SHAP, largest first)\n1. incident severity recorded as major damage (this claim: yes) - raises the fraud score (SHAP +0.312)\n2. policyholder hobby recorded as cross-fit (this claim: no) - lowers the fraud score (SHAP -0.023)\n3. policyholder hobby recorded as chess (this claim: no) - lowers the fraud score (SHAP -0.022)\n4. time between policy start and incident (this claim: 4,638 days) - raises the fraud score (SHAP +0.017)\n5. vehicle component of the claim (this claim: $41,930) - raises the fraud score (SHAP +0.013)"
+ },
+ {
+  "idx": 147,
+  "prob": 0.72,
+  "true_label": 0,
+  "C0": "Fraud risk score 0.72 (threshold 0.49); risk band ELEVATED. Claim referred for review.",
+  "C1": "Fraud risk score 0.72 (threshold 0.49); risk band ELEVATED. Claim referred for review.\nTop factors (SHAP, fraud probability scale):\nincident_severity_Major Damage: +0.305\npolicy_tenure_days: -0.047\ninsured_hobbies_chess: -0.024\ninsured_hobbies_cross-fit: -0.022\npolicy_annual_premium: -0.012",
+  "C2": "This claim has a fraud risk score of 0.72, above the referral threshold of 0.49. The factors raising the score are: incident severity recorded as major damage (yes). The factors lowering the score are: time between policy start and incident (8,167 days); policyholder hobby recorded as chess (no); policyholder hobby recorded as cross-fit (no); annual premium ($802.24). Recommended check: verify the evidence behind the strongest factor, incident severity recorded as major damage.",
+  "C2_fidelity": {
+   "driver_recall": 1.0,
+   "sign_accuracy": 1.0,
+   "signs_stated": 2,
+   "non_driver_features_mentioned": 0,
+   "words": 72
+  },
+  "input_block": "Fraud risk score: 0.72 (referral threshold 0.49).\n\nCLAIM DETAILS\nPolicy: state OH, combined single limit 250/500, deductible $1,000, annual premium $802.24, umbrella limit $0, customer for 236 months, policy in force 8,167 days at the incident date.\nPolicyholder: age 38, female, education College, occupation other-service, hobby paintball.\nIncident: Single Vehicle Collision, collision type Side Collision, severity Major Damage, 1 vehicle(s), 0 bodily injur(ies), 1 witness(es), authorities contacted: Ambulance, police report available: not recorded, property damage: NO, hour 16:00, WV.\nClaim: total $66,840 (injury $16,710, property $5,570, vehicle $44,560); vehicle Mercedes 2014.\n\nTOP FIVE MODEL FACTORS (SHAP, largest first)\n1. incident severity recorded as major damage (this claim: yes) - raises the fraud score (SHAP +0.305)\n2. time between policy start and incident (this claim: 8,167 days) - lowers the fraud score (SHAP -0.047)\n3. policyholder hobby recorded as chess (this claim: no) - lowers the fraud score (SHAP -0.024)\n4. policyholder hobby recorded as cross-fit (this claim: no) - lowers the fraud score (SHAP -0.022)\n5. annual premium (this claim: $802.24) - lowers the fraud score (SHAP -0.012)"
+ },
+ {
+  "idx": 150,
+  "prob": 0.681,
+  "true_label": 1,
+  "C0": "Fraud risk score 0.68 (threshold 0.49); risk band ELEVATED. Claim referred for review.",
+  "C1": "Fraud risk score 0.68 (threshold 0.49); risk band ELEVATED. Claim referred for review.\nTop factors (SHAP, fraud probability scale):\nincident_severity_Major Damage: +0.301\npolicy_tenure_days: -0.102\ninsured_hobbies_chess: -0.024\ninsured_hobbies_cross-fit: -0.021\nproperty_claim: +0.016",
+  "C2": "This claim has a fraud risk score of 0.68, above the referral threshold of 0.49. The factors raising the score are: incident severity recorded as major damage (yes); property component of the claim ($6,730). The factors lowering the score are: time between policy start and incident (8,745 days); policyholder hobby recorded as chess (no); policyholder hobby recorded as cross-fit (no). Recommended check: verify the evidence behind the strongest factor, incident severity recorded as major damage.",
+  "C2_fidelity": {
+   "driver_recall": 1.0,
+   "sign_accuracy": 1.0,
+   "signs_stated": 2,
+   "non_driver_features_mentioned": 0,
+   "words": 75
+  },
+  "input_block": "Fraud risk score: 0.68 (referral threshold 0.49).\n\nCLAIM DETAILS\nPolicy: state IN, combined single limit 500/1000, deductible $500, annual premium $1,285.42, umbrella limit $0, customer for 121 months, policy in force 8,745 days at the incident date.\nPolicyholder: age 34, male, education MD, occupation priv-house-serv, hobby video-games.\nIncident: Single Vehicle Collision, collision type Front Collision, severity Major Damage, 1 vehicle(s), 1 bodily injur(ies), 1 witness(es), authorities contacted: Fire, police report available: NO, property damage: NO, hour 11:00, VA.\nClaim: total $67,300 (injury $6,730, property $6,730, vehicle $53,840); vehicle Dodge 2000.\n\nTOP FIVE MODEL FACTORS (SHAP, largest first)\n1. incident severity recorded as major damage (this claim: yes) - raises the fraud score (SHAP +0.301)\n2. time between policy start and incident (this claim: 8,745 days) - lowers the fraud score (SHAP -0.102)\n3. policyholder hobby recorded as chess (this claim: no) - lowers the fraud score (SHAP -0.024)\n4. policyholder hobby recorded as cross-fit (this claim: no) - lowers the fraud score (SHAP -0.021)\n5. property component of the claim (this claim: $6,730) - raises the fraud score (SHAP +0.016)"
+ },
+ {
+  "idx": 151,
+  "prob": 0.76,
+  "true_label": 0,
+  "C0": "Fraud risk score 0.76 (threshold 0.49); risk band ELEVATED. Claim referred for review.",
+  "C1": "Fraud risk score 0.76 (threshold 0.49); risk band ELEVATED. Claim referred for review.\nTop factors (SHAP, fraud probability scale):\nincident_severity_Major Damage: +0.299\ninsured_hobbies_chess: -0.023\ninsured_hobbies_cross-fit: -0.023\npolicy_annual_premium: -0.021\npolicy_tenure_days: +0.016",
+  "C2": "This claim has a fraud risk score of 0.76, above the referral threshold of 0.49. The factors raising the score are: incident severity recorded as major damage (yes); time between policy start and incident (4,527 days). The factors lowering the score are: policyholder hobby recorded as chess (no); policyholder hobby recorded as cross-fit (no); annual premium ($1,046.71). Recommended check: verify the evidence behind the strongest factor, incident severity recorded as major damage.",
+  "C2_fidelity": {
+   "driver_recall": 1.0,
+   "sign_accuracy": 1.0,
+   "signs_stated": 2,
+   "non_driver_features_mentioned": 0,
+   "words": 72
+  },
+  "input_block": "Fraud risk score: 0.76 (referral threshold 0.49).\n\nCLAIM DETAILS\nPolicy: state IL, combined single limit 100/300, deductible $1,000, annual premium $1,046.71, umbrella limit $0, customer for 288 months, policy in force 4,527 days at the incident date.\nPolicyholder: age 45, male, education Masters, occupation priv-house-serv, hobby polo.\nIncident: Multi-vehicle Collision, collision type Rear Collision, severity Major Damage, 3 vehicle(s), 2 bodily injur(ies), 1 witness(es), authorities contacted: Fire, police report available: not recorded, property damage: not recorded, hour 4:00, NC.\nClaim: total $48,060 (injury $10,680, property $5,340, vehicle $32,040); vehicle Mercedes 2009.\n\nTOP FIVE MODEL FACTORS (SHAP, largest first)\n1. incident severity recorded as major damage (this claim: yes) - raises the fraud score (SHAP +0.299)\n2. policyholder hobby recorded as chess (this claim: no) - lowers the fraud score (SHAP -0.023)\n3. policyholder hobby recorded as cross-fit (this claim: no) - lowers the fraud score (SHAP -0.023)\n4. annual premium (this claim: $1,046.71) - lowers the fraud score (SHAP -0.021)\n5. time between policy start and incident (this claim: 4,527 days) - raises the fraud score (SHAP +0.016)"
+ },
+ {
+  "idx": 156,
+  "prob": 0.865,
+  "true_label": 0,
+  "C0": "Fraud risk score 0.87 (threshold 0.49); risk band HIGH. Claim referred for review.",
+  "C1": "Fraud risk score 0.87 (threshold 0.49); risk band HIGH. Claim referred for review.\nTop factors (SHAP, fraud probability scale):\ninsured_hobbies_chess: +0.254\nincident_severity_Major Damage: +0.162\npolicy_tenure_days: -0.076\nproperty_claim: +0.018\ninsured_hobbies_cross-fit: -0.013",
+  "C2": "This claim has a fraud risk score of 0.87, above the referral threshold of 0.49. The factors raising the score are: policyholder hobby recorded as chess (yes); incident severity recorded as major damage (yes); property component of the claim ($6,060). The factors lowering the score are: time between policy start and incident (8,675 days); policyholder hobby recorded as cross-fit (no). Recommended check: verify the evidence behind the strongest factor, policyholder hobby recorded as chess.",
+  "C2_fidelity": {
+   "driver_recall": 1.0,
+   "sign_accuracy": 1.0,
+   "signs_stated": 2,
+   "non_driver_features_mentioned": 0,
+   "words": 74
+  },
+  "input_block": "Fraud risk score: 0.87 (referral threshold 0.49).\n\nCLAIM DETAILS\nPolicy: state OH, combined single limit 500/1000, deductible $500, annual premium $1,459.99, umbrella limit $0, customer for 381 months, policy in force 8,675 days at the incident date.\nPolicyholder: age 55, female, education MD, occupation other-service, hobby chess.\nIncident: Single Vehicle Collision, collision type Rear Collision, severity Major Damage, 1 vehicle(s), 1 bodily injur(ies), 2 witness(es), authorities contacted: Fire, police report available: YES, property damage: YES, hour 8:00, SC.\nClaim: total $60,600 (injury $12,120, property $6,060, vehicle $42,420); vehicle Accura 2011.\n\nTOP FIVE MODEL FACTORS (SHAP, largest first)\n1. policyholder hobby recorded as chess (this claim: yes) - raises the fraud score (SHAP +0.254)\n2. incident severity recorded as major damage (this claim: yes) - raises the fraud score (SHAP +0.162)\n3. time between policy start and incident (this claim: 8,675 days) - lowers the fraud score (SHAP -0.076)\n4. property component of the claim (this claim: $6,060) - raises the fraud score (SHAP +0.018)\n5. policyholder hobby recorded as cross-fit (this claim: no) - lowers the fraud score (SHAP -0.013)"
+ },
+ {
+  "idx": 160,
+  "prob": 0.605,
+  "true_label": 1,
+  "C0": "Fraud risk score 0.61 (threshold 0.49); risk band ELEVATED. Claim referred for review.",
+  "C1": "Fraud risk score 0.61 (threshold 0.49); risk band ELEVATED. Claim referred for review.\nTop factors (SHAP, fraud probability scale):\nincident_severity_Major Damage: +0.288\npolicy_tenure_days: -0.131\ninsured_hobbies_chess: -0.025\ninsured_hobbies_cross-fit: -0.021\nproperty_claim: -0.014",
+  "C2": "This claim has a fraud risk score of 0.61, above the referral threshold of 0.49. The factors raising the score are: incident severity recorded as major damage (yes). The factors lowering the score are: time between policy start and incident (9,096 days); policyholder hobby recorded as chess (no); policyholder hobby recorded as cross-fit (no); property component of the claim ($0). Recommended check: verify the evidence behind the strongest factor, incident severity recorded as major damage.",
+  "C2_fidelity": {
+   "driver_recall": 1.0,
+   "sign_accuracy": 1.0,
+   "signs_stated": 2,
+   "non_driver_features_mentioned": 0,
+   "words": 75
+  },
+  "input_block": "Fraud risk score: 0.61 (referral threshold 0.49).\n\nCLAIM DETAILS\nPolicy: state IN, combined single limit 100/300, deductible $500, annual premium $795.23, umbrella limit $0, customer for 154 months, policy in force 9,096 days at the incident date.\nPolicyholder: age 34, male, education PhD, occupation machine-op-inspct, hobby base-jumping.\nIncident: Multi-vehicle Collision, collision type Rear Collision, severity Major Damage, 3 vehicle(s), 2 bodily injur(ies), 1 witness(es), authorities contacted: Police, police report available: not recorded, property damage: YES, hour 15:00, NY.\nClaim: total $69,480 (injury $15,440, property $0, vehicle $54,040); vehicle Nissan 2014.\n\nTOP FIVE MODEL FACTORS (SHAP, largest first)\n1. incident severity recorded as major damage (this claim: yes) - raises the fraud score (SHAP +0.288)\n2. time between policy start and incident (this claim: 9,096 days) - lowers the fraud score (SHAP -0.131)\n3. policyholder hobby recorded as chess (this claim: no) - lowers the fraud score (SHAP -0.025)\n4. policyholder hobby recorded as cross-fit (this claim: no) - lowers the fraud score (SHAP -0.021)\n5. property component of the claim (this claim: $0) - lowers the fraud score (SHAP -0.014)"
+ },
+ {
+  "idx": 161,
+  "prob": 0.764,
+  "true_label": 0,
+  "C0": "Fraud risk score 0.76 (threshold 0.49); risk band ELEVATED. Claim referred for review.",
+  "C1": "Fraud risk score 0.76 (threshold 0.49); risk band ELEVATED. Claim referred for review.\nTop factors (SHAP, fraud probability scale):\nincident_severity_Major Damage: +0.296\npolicy_annual_premium: -0.025\ninsured_hobbies_cross-fit: -0.023\ninsured_hobbies_chess: -0.023\nvehicle_claim: +0.013",
+  "C2": "This claim has a fraud risk score of 0.76, above the referral threshold of 0.49. The factors raising the score are: incident severity recorded as major damage (yes); vehicle component of the claim ($42,480). The factors lowering the score are: annual premium ($1,078.22); policyholder hobby recorded as cross-fit (no); policyholder hobby recorded as chess (no). Recommended check: verify the evidence behind the strongest factor, incident severity recorded as major damage.",
+  "C2_fidelity": {
+   "driver_recall": 1.0,
+   "sign_accuracy": 1.0,
+   "signs_stated": 2,
+   "non_driver_features_mentioned": 0,
+   "words": 70
+  },
+  "input_block": "Fraud risk score: 0.76 (referral threshold 0.49).\n\nCLAIM DETAILS\nPolicy: state IN, combined single limit 100/300, deductible $2,000, annual premium $1,078.22, umbrella limit $0, customer for 126 months, policy in force 2,658 days at the incident date.\nPolicyholder: age 34, female, education Masters, occupation transport-moving, hobby camping.\nIncident: Multi-vehicle Collision, collision type Side Collision, severity Major Damage, 3 vehicle(s), 0 bodily injur(ies), 1 witness(es), authorities contacted: Fire, police report available: YES, property damage: NO, hour 2:00, SC.\nClaim: total $58,410 (injury $10,620, property $5,310, vehicle $42,480); vehicle Chevrolet 2007.\n\nTOP FIVE MODEL FACTORS (SHAP, largest first)\n1. incident severity recorded as major damage (this claim: yes) - raises the fraud score (SHAP +0.296)\n2. annual premium (this claim: $1,078.22) - lowers the fraud score (SHAP -0.025)\n3. policyholder hobby recorded as cross-fit (this claim: no) - lowers the fraud score (SHAP -0.023)\n4. policyholder hobby recorded as chess (this claim: no) - lowers the fraud score (SHAP -0.023)\n5. vehicle component of the claim (this claim: $42,480) - raises the fraud score (SHAP +0.013)"
+ },
+ {
+  "idx": 166,
+  "prob": 0.764,
+  "true_label": 0,
+  "C0": "Fraud risk score 0.76 (threshold 0.49); risk band ELEVATED. Claim referred for review.",
+  "C1": "Fraud risk score 0.76 (threshold 0.49); risk band ELEVATED. Claim referred for review.\nTop factors (SHAP, fraud probability scale):\nincident_severity_Major Damage: +0.310\nproperty_claim: +0.022\ninsured_hobbies_chess: -0.022\npolicy_tenure_days: -0.021\ninsured_hobbies_cross-fit: -0.015",
+  "C2": "This claim has a fraud risk score of 0.76, above the referral threshold of 0.49. The factors raising the score are: incident severity recorded as major damage (yes); property component of the claim ($3,720). The factors lowering the score are: policyholder hobby recorded as chess (no); time between policy start and incident (46 days); policyholder hobby recorded as cross-fit (no). Recommended check: verify the evidence behind the strongest factor, incident severity recorded as major damage.",
+  "C2_fidelity": {
+   "driver_recall": 1.0,
+   "sign_accuracy": 1.0,
+   "signs_stated": 2,
+   "non_driver_features_mentioned": 0,
+   "words": 75
+  },
+  "input_block": "Fraud risk score: 0.76 (referral threshold 0.49).\n\nCLAIM DETAILS\nPolicy: state IL, combined single limit 500/1000, deductible $1,000, annual premium $1,740.57, umbrella limit $0, customer for 80 months, policy in force 46 days at the incident date.\nPolicyholder: age 28, female, education College, occupation farming-fishing, hobby golf.\nIncident: Single Vehicle Collision, collision type Rear Collision, severity Major Damage, 1 vehicle(s), 0 bodily injur(ies), 1 witness(es), authorities contacted: Police, police report available: not recorded, property damage: not recorded, hour 3:00, SC.\nClaim: total $33,480 (injury $3,720, property $3,720, vehicle $26,040); vehicle Dodge 2011.\n\nTOP FIVE MODEL FACTORS (SHAP, largest first)\n1. incident severity recorded as major damage (this claim: yes) - raises the fraud score (SHAP +0.310)\n2. property component of the claim (this claim: $3,720) - raises the fraud score (SHAP +0.022)\n3. policyholder hobby recorded as chess (this claim: no) - lowers the fraud score (SHAP -0.022)\n4. time between policy start and incident (this claim: 46 days) - lowers the fraud score (SHAP -0.021)\n5. policyholder hobby recorded as cross-fit (this claim: no) - lowers the fraud score (SHAP -0.015)"
+ },
+ {
+  "idx": 168,
+  "prob": 0.699,
+  "true_label": 0,
+  "C0": "Fraud risk score 0.70 (threshold 0.49); risk band ELEVATED. Claim referred for review.",
+  "C1": "Fraud risk score 0.70 (threshold 0.49); risk band ELEVATED. Claim referred for review.\nTop factors (SHAP, fraud probability scale):\nincident_severity_Major Damage: +0.307\npolicy_tenure_days: -0.101\ninsured_hobbies_chess: -0.025\nproperty_claim: +0.019\ninsured_hobbies_cross-fit: -0.018",
+  "C2": "This claim has a fraud risk score of 0.70, above the referral threshold of 0.49. The factors raising the score are: incident severity recorded as major damage (yes); property component of the claim ($5,820). The factors lowering the score are: time between policy start and incident (8,901 days); policyholder hobby recorded as chess (no); policyholder hobby recorded as cross-fit (no). Recommended check: verify the evidence behind the strongest factor, incident severity recorded as major damage.",
+  "C2_fidelity": {
+   "driver_recall": 1.0,
+   "sign_accuracy": 1.0,
+   "signs_stated": 2,
+   "non_driver_features_mentioned": 0,
+   "words": 75
+  },
+  "input_block": "Fraud risk score: 0.70 (referral threshold 0.49).\n\nCLAIM DETAILS\nPolicy: state OH, combined single limit 100/300, deductible $1,000, annual premium $1,457.65, umbrella limit $5,000,000, customer for 146 months, policy in force 8,901 days at the incident date.\nPolicyholder: age 31, female, education College, occupation armed-forces, hobby camping.\nIncident: Multi-vehicle Collision, collision type Rear Collision, severity Major Damage, 3 vehicle(s), 1 bodily injur(ies), 3 witness(es), authorities contacted: Ambulance, police report available: not recorded, property damage: NO, hour 0:00, VA.\nClaim: total $52,380 (injury $5,820, property $5,820, vehicle $40,740); vehicle Toyota 2010.\n\nTOP FIVE MODEL FACTORS (SHAP, largest first)\n1. incident severity recorded as major damage (this claim: yes) - raises the fraud score (SHAP +0.307)\n2. time between policy start and incident (this claim: 8,901 days) - lowers the fraud score (SHAP -0.101)\n3. policyholder hobby recorded as chess (this claim: no) - lowers the fraud score (SHAP -0.025)\n4. property component of the claim (this claim: $5,820) - raises the fraud score (SHAP +0.019)\n5. policyholder hobby recorded as cross-fit (this claim: no) - lowers the fraud score (SHAP -0.018)"
+ },
+ {
+  "idx": 171,
+  "prob": 0.838,
+  "true_label": 0,
+  "C0": "Fraud risk score 0.84 (threshold 0.49); risk band HIGH. Claim referred for review.",
+  "C1": "Fraud risk score 0.84 (threshold 0.49); risk band HIGH. Claim referred for review.\nTop factors (SHAP, fraud probability scale):\nincident_severity_Major Damage: +0.316\ninsured_hobbies_cross-fit: -0.023\ninsured_hobbies_chess: -0.020\npolicy_tenure_days: +0.016\nvehicle_claim: +0.016",
+  "C2": "This claim has a fraud risk score of 0.84, above the referral threshold of 0.49. The factors raising the score are: incident severity recorded as major damage (yes); time between policy start and incident (5,321 days); vehicle component of the claim ($44,160). The factors lowering the score are: policyholder hobby recorded as cross-fit (no); policyholder hobby recorded as chess (no). Recommended check: verify the evidence behind the strongest factor, incident severity recorded as major damage.",
+  "C2_fidelity": {
+   "driver_recall": 1.0,
+   "sign_accuracy": 1.0,
+   "signs_stated": 2,
+   "non_driver_features_mentioned": 0,
+   "words": 75
+  },
+  "input_block": "Fraud risk score: 0.84 (referral threshold 0.49).\n\nCLAIM DETAILS\nPolicy: state OH, combined single limit 500/1000, deductible $2,000, annual premium $1,422.95, umbrella limit $0, customer for 434 months, policy in force 5,321 days at the incident date.\nPolicyholder: age 57, male, education JD, occupation transport-moving, hobby bungie-jumping.\nIncident: Multi-vehicle Collision, collision type Rear Collision, severity Major Damage, 3 vehicle(s), 1 bodily injur(ies), 3 witness(es), authorities contacted: Other, police report available: NO, property damage: NO, hour 15:00, SC.\nClaim: total $66,240 (injury $11,040, property $11,040, vehicle $44,160); vehicle Nissan 2003.\n\nTOP FIVE MODEL FACTORS (SHAP, largest first)\n1. incident severity recorded as major damage (this claim: yes) - raises the fraud score (SHAP +0.316)\n2. policyholder hobby recorded as cross-fit (this claim: no) - lowers the fraud score (SHAP -0.023)\n3. policyholder hobby recorded as chess (this claim: no) - lowers the fraud score (SHAP -0.020)\n4. time between policy start and incident (this claim: 5,321 days) - raises the fraud score (SHAP +0.016)\n5. vehicle component of the claim (this claim: $44,160) - raises the fraud score (SHAP +0.016)"
+ },
+ {
+  "idx": 176,
+  "prob": 0.654,
+  "true_label": 1,
+  "C0": "Fraud risk score 0.65 (threshold 0.49); risk band ELEVATED. Claim referred for review.",
+  "C1": "Fraud risk score 0.65 (threshold 0.49); risk band ELEVATED. Claim referred for review.\nTop factors (SHAP, fraud probability scale):\nincident_severity_Major Damage: +0.297\npolicy_tenure_days: -0.076\ninsured_hobbies_chess: -0.024\nproperty_claim: -0.023\ninsured_hobbies_cross-fit: -0.021",
+  "C2": "This claim has a fraud risk score of 0.65, above the referral threshold of 0.49. The factors raising the score are: incident severity recorded as major damage (yes). The factors lowering the score are: time between policy start and incident (8,334 days); policyholder hobby recorded as chess (no); property component of the claim ($13,580); policyholder hobby recorded as cross-fit (no). Recommended check: verify the evidence behind the strongest factor, incident severity recorded as major damage.",
+  "C2_fidelity": {
+   "driver_recall": 1.0,
+   "sign_accuracy": 1.0,
+   "signs_stated": 2,
+   "non_driver_features_mentioned": 0,
+   "words": 75
+  },
+  "input_block": "Fraud risk score: 0.65 (referral threshold 0.49).\n\nCLAIM DETAILS\nPolicy: state IL, combined single limit 250/500, deductible $500, annual premium $1,479.48, umbrella limit $0, customer for 156 months, policy in force 8,334 days at the incident date.\nPolicyholder: age 32, male, education Masters, occupation prof-specialty, hobby bungie-jumping.\nIncident: Single Vehicle Collision, collision type Front Collision, severity Major Damage, 1 vehicle(s), 1 bodily injur(ies), 3 witness(es), authorities contacted: Other, police report available: YES, property damage: YES, hour 15:00, NY.\nClaim: total $74,690 (injury $6,790, property $13,580, vehicle $54,320); vehicle Dodge 2008.\n\nTOP FIVE MODEL FACTORS (SHAP, largest first)\n1. incident severity recorded as major damage (this claim: yes) - raises the fraud score (SHAP +0.297)\n2. time between policy start and incident (this claim: 8,334 days) - lowers the fraud score (SHAP -0.076)\n3. policyholder hobby recorded as chess (this claim: no) - lowers the fraud score (SHAP -0.024)\n4. property component of the claim (this claim: $13,580) - lowers the fraud score (SHAP -0.023)\n5. policyholder hobby recorded as cross-fit (this claim: no) - lowers the fraud score (SHAP -0.021)"
+ },
+ {
+  "idx": 184,
+  "prob": 0.771,
+  "true_label": 1,
+  "C0": "Fraud risk score 0.77 (threshold 0.49); risk band ELEVATED. Claim referred for review.",
+  "C1": "Fraud risk score 0.77 (threshold 0.49); risk band ELEVATED. Claim referred for review.\nTop factors (SHAP, fraud probability scale):\nincident_severity_Major Damage: +0.296\ninsured_hobbies_chess: -0.022\ninsured_hobbies_cross-fit: -0.022\nproperty_claim: -0.018\npolicy_tenure_days: +0.015",
+  "C2": "This claim has a fraud risk score of 0.77, above the referral threshold of 0.49. The factors raising the score are: incident severity recorded as major damage (yes); time between policy start and incident (3,383 days). The factors lowering the score are: policyholder hobby recorded as chess (no); policyholder hobby recorded as cross-fit (no); property component of the claim ($15,080). Recommended check: verify the evidence behind the strongest factor, incident severity recorded as major damage.",
+  "C2_fidelity": {
+   "driver_recall": 1.0,
+   "sign_accuracy": 1.0,
+   "signs_stated": 2,
+   "non_driver_features_mentioned": 0,
+   "words": 75
+  },
+  "input_block": "Fraud risk score: 0.77 (referral threshold 0.49).\n\nCLAIM DETAILS\nPolicy: state IN, combined single limit 500/1000, deductible $1,000, annual premium $1,532.47, umbrella limit $0, customer for 371 months, policy in force 3,383 days at the incident date.\nPolicyholder: age 51, female, education Associate, occupation tech-support, hobby golf.\nIncident: Single Vehicle Collision, collision type Rear Collision, severity Major Damage, 1 vehicle(s), 0 bodily injur(ies), 3 witness(es), authorities contacted: Fire, police report available: YES, property damage: YES, hour 7:00, NY.\nClaim: total $75,400 (injury $7,540, property $15,080, vehicle $52,780); vehicle Dodge 2012.\n\nTOP FIVE MODEL FACTORS (SHAP, largest first)\n1. incident severity recorded as major damage (this claim: yes) - raises the fraud score (SHAP +0.296)\n2. policyholder hobby recorded as chess (this claim: no) - lowers the fraud score (SHAP -0.022)\n3. policyholder hobby recorded as cross-fit (this claim: no) - lowers the fraud score (SHAP -0.022)\n4. property component of the claim (this claim: $15,080) - lowers the fraud score (SHAP -0.018)\n5. time between policy start and incident (this claim: 3,383 days) - raises the fraud score (SHAP +0.015)"
+ },
+ {
+  "idx": 189,
+  "prob": 0.861,
+  "true_label": 1,
+  "C0": "Fraud risk score 0.86 (threshold 0.49); risk band HIGH. Claim referred for review.",
+  "C1": "Fraud risk score 0.86 (threshold 0.49); risk band HIGH. Claim referred for review.\nTop factors (SHAP, fraud probability scale):\ninsured_hobbies_chess: +0.508\nincident_severity_Major Damage: -0.108\ninsured_hobbies_cross-fit: -0.018\nvehicle_claim: -0.015\nproperty_claim: -0.005",
+  "C2": "This claim has a fraud risk score of 0.86, above the referral threshold of 0.49. The factors raising the score are: policyholder hobby recorded as chess (yes). The factors lowering the score are: incident severity recorded as major damage (no (Minor Damage)); policyholder hobby recorded as cross-fit (no); vehicle component of the claim ($2,940); property component of the claim ($840). Recommended check: verify the evidence behind the strongest factor, policyholder hobby recorded as chess.",
+  "C2_fidelity": {
+   "driver_recall": 1.0,
+   "sign_accuracy": 1.0,
+   "signs_stated": 2,
+   "non_driver_features_mentioned": 0,
+   "words": 74
+  },
+  "input_block": "Fraud risk score: 0.86 (referral threshold 0.49).\n\nCLAIM DETAILS\nPolicy: state IL, combined single limit 500/1000, deductible $1,000, annual premium $1,526.61, umbrella limit $0, customer for 360 months, policy in force 4,813 days at the incident date.\nPolicyholder: age 51, male, education Masters, occupation handlers-cleaners, hobby chess.\nIncident: Vehicle Theft, collision type not recorded, severity Minor Damage, 1 vehicle(s), 2 bodily injur(ies), 2 witness(es), authorities contacted: Police, police report available: not recorded, property damage: YES, hour 5:00, SC.\nClaim: total $4,620 (injury $840, property $840, vehicle $2,940); vehicle Dodge 2009.\n\nTOP FIVE MODEL FACTORS (SHAP, largest first)\n1. policyholder hobby recorded as chess (this claim: yes) - raises the fraud score (SHAP +0.508)\n2. incident severity recorded as major damage (this claim: no (Minor Damage)) - lowers the fraud score (SHAP -0.108)\n3. policyholder hobby recorded as cross-fit (this claim: no) - lowers the fraud score (SHAP -0.018)\n4. vehicle component of the claim (this claim: $2,940) - lowers the fraud score (SHAP -0.015)\n5. property component of the claim (this claim: $840) - lowers the fraud score (SHAP -0.005)"
+ },
+ {
+  "idx": 191,
+  "prob": 0.819,
+  "true_label": 1,
+  "C0": "Fraud risk score 0.82 (threshold 0.49); risk band HIGH. Claim referred for review.",
+  "C1": "Fraud risk score 0.82 (threshold 0.49); risk band HIGH. Claim referred for review.\nTop factors (SHAP, fraud probability scale):\nincident_severity_Major Damage: +0.316\ninsured_hobbies_chess: -0.023\ninsured_hobbies_cross-fit: -0.021\nproperty_claim: +0.015\npolicy_tenure_days: +0.011",
+  "C2": "This claim has a fraud risk score of 0.82, above the referral threshold of 0.49. The factors raising the score are: incident severity recorded as major damage (yes); property component of the claim ($4,080); time between policy start and incident (2,776 days). The factors lowering the score are: policyholder hobby recorded as chess (no); policyholder hobby recorded as cross-fit (no). Recommended check: verify the evidence behind the strongest factor, incident severity recorded as major damage.",
+  "C2_fidelity": {
+   "driver_recall": 1.0,
+   "sign_accuracy": 1.0,
+   "signs_stated": 2,
+   "non_driver_features_mentioned": 0,
+   "words": 75
+  },
+  "input_block": "Fraud risk score: 0.82 (referral threshold 0.49).\n\nCLAIM DETAILS\nPolicy: state IN, combined single limit 100/300, deductible $2,000, annual premium $1,462.76, umbrella limit $0, customer for 159 months, policy in force 2,776 days at the incident date.\nPolicyholder: age 33, female, education College, occupation craft-repair, hobby skydiving.\nIncident: Multi-vehicle Collision, collision type Rear Collision, severity Major Damage, 3 vehicle(s), 2 bodily injur(ies), 0 witness(es), authorities contacted: Ambulance, police report available: NO, property damage: YES, hour 23:00, NY.\nClaim: total $44,880 (injury $8,160, property $4,080, vehicle $32,640); vehicle Mercedes 2004.\n\nTOP FIVE MODEL FACTORS (SHAP, largest first)\n1. incident severity recorded as major damage (this claim: yes) - raises the fraud score (SHAP +0.316)\n2. policyholder hobby recorded as chess (this claim: no) - lowers the fraud score (SHAP -0.023)\n3. policyholder hobby recorded as cross-fit (this claim: no) - lowers the fraud score (SHAP -0.021)\n4. property component of the claim (this claim: $4,080) - raises the fraud score (SHAP +0.015)\n5. time between policy start and incident (this claim: 2,776 days) - raises the fraud score (SHAP +0.011)"
+ },
+ {
+  "idx": 194,
+  "prob": 0.795,
+  "true_label": 1,
+  "C0": "Fraud risk score 0.80 (threshold 0.49); risk band ELEVATED. Claim referred for review.",
+  "C1": "Fraud risk score 0.80 (threshold 0.49); risk band ELEVATED. Claim referred for review.\nTop factors (SHAP, fraud probability scale):\nincident_severity_Major Damage: +0.291\ninsured_hobbies_cross-fit: -0.023\ninsured_hobbies_chess: -0.022\npolicy_tenure_days: +0.021\ntotal_claim_amount: +0.013",
+  "C2": "This claim has a fraud risk score of 0.80, above the referral threshold of 0.49. The factors raising the score are: incident severity recorded as major damage (yes); time between policy start and incident (4,541 days); total claim amount ($80,850). The factors lowering the score are: policyholder hobby recorded as cross-fit (no); policyholder hobby recorded as chess (no). Recommended check: verify the evidence behind the strongest factor, incident severity recorded as major damage.",
+  "C2_fidelity": {
+   "driver_recall": 1.0,
+   "sign_accuracy": 1.0,
+   "signs_stated": 2,
+   "non_driver_features_mentioned": 0,
+   "words": 73
+  },
+  "input_block": "Fraud risk score: 0.80 (referral threshold 0.49).\n\nCLAIM DETAILS\nPolicy: state OH, combined single limit 250/500, deductible $500, annual premium $1,459.97, umbrella limit $5,000,000, customer for 111 months, policy in force 4,541 days at the incident date.\nPolicyholder: age 27, male, education MD, occupation sales, hobby yachting.\nIncident: Multi-vehicle Collision, collision type Side Collision, severity Major Damage, 3 vehicle(s), 1 bodily injur(ies), 2 witness(es), authorities contacted: Police, police report available: NO, property damage: NO, hour 2:00, SC.\nClaim: total $80,850 (injury $7,350, property $14,700, vehicle $58,800); vehicle Ford 2011.\n\nTOP FIVE MODEL FACTORS (SHAP, largest first)\n1. incident severity recorded as major damage (this claim: yes) - raises the fraud score (SHAP +0.291)\n2. policyholder hobby recorded as cross-fit (this claim: no) - lowers the fraud score (SHAP -0.023)\n3. policyholder hobby recorded as chess (this claim: no) - lowers the fraud score (SHAP -0.022)\n4. time between policy start and incident (this claim: 4,541 days) - raises the fraud score (SHAP +0.021)\n5. total claim amount (this claim: $80,850) - raises the fraud score (SHAP +0.013)"
+ }
+]

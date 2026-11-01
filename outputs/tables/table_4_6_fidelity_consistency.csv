@@ -1,0 +1,9 @@
+cond,driver_recall,sign_accuracy,ucr,words,seconds,bertscore_f1,driver_jaccard,meets_recall_target,meets_ucr_target
+C3-P0-G1,0.89,0.999,0.091,130.615,8.573,0.952,0.959,False,False
+C3-P0-G2,0.909,1.0,0.152,146.875,5.642,0.949,0.906,True,False
+C3-P1-G1,0.899,0.996,0.116,146.5,8.655,0.953,0.948,False,False
+C3-P1-G2,0.911,0.998,0.124,155.276,5.26,0.964,0.907,True,False
+C3-P2-G1,0.94,0.995,0.088,152.651,8.141,0.944,0.956,True,False
+C3-P2-G2,0.895,0.993,0.159,162.047,4.864,0.938,0.874,False,False
+C3-P3-G1,0.975,0.979,0.06,111.438,6.973,0.982,0.978,True,False
+C3-P3-G2,0.939,0.984,0.058,95.229,3.482,0.97,0.947,True,False
